@@ -1,5 +1,8 @@
 #contains the code for quickmenu buttons
 label button_input:
+    $ player_input = renpy.input.("Hey! What's going on?")
+    $ input.lower() # To all lowercase 
+    call input_response
     return
 
 label button_games:
