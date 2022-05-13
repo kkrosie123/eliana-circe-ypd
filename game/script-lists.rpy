@@ -72,7 +72,7 @@ init python:
         _("fucktard"),
         _("fuck you"),
         _("gaytard"),
-        _("go fuck yourself),
+        _("go fuck yourself"),
         _("i hate you"),
         _("shithead"),
         _("slut"),
