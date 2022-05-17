@@ -29,3 +29,16 @@ label greeting_adoration_song_we'll_meet_again:
     e "Ehehe~ Hello there, Darling~"
     return
     
+label greeting_adoration_song_sunshine:
+    e "~You are my sunshine~"
+    e "~My only sunshine~"
+    e "~You make me happy~"
+    e "~When skies are gray~"
+    e "~You'll never know, Dear~"
+    e "~How much I love you~"
+    e "~Please don't take my sunshine away~"
+    e "..."
+    e "Where is my sunshine?"
+    e "There's my sunshine, ehehe~!"
+    e "Hello again, my love."
+    return
