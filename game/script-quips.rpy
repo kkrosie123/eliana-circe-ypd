@@ -1,6 +1,28 @@
 #contains eliana's quips
 init python:
     import random
+    #hello
+    greeting_quips = [
+        _("Hello!"),
+        _("Hellooooooo!"),
+        _("Hello there!"),
+        _("Hey!"),
+        _("Heyyyy!"),
+        _("Hey hi hello!"),
+        _("Hey there!"),
+        _("Hi!"),
+        _("Hiiiii!"),
+        _("Hi there!")
+    ]
+    greeting_quip = random.choice(greeting_quips)
+    greeting_follow_up_quips = [
+        _("How are things?"),
+        _("How are you?"),
+        _("How are you today?"),
+        _("Nice to see you again!"),
+        _("What should we do today?")
+    ]
+    greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
     #no response
     no_response_quips = [
         _("Hmm, I don't have anything to say."),
