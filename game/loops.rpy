@@ -12,6 +12,10 @@ label loops:
         jump loop_idle
     elif affection_eliana == "high":
         jump loop_idle_high_aff
+    elif affection_eliana == "love":
+        jump loop_idle_love
+    elif affection_eliana == "enamored":
+        jump loop_idle_enamored
 
 #sinner 
 label loop_idle_sinner:
@@ -116,6 +120,14 @@ label animation_idle_high_aff:
     call high_aff_pose_04
     call high_aff_pose_04
     return
+    
+#love
+label loop_idle_love:
+    jump loops
+
+#enamored
+label loop_idle_enamored:
+    jump loops
 
 #the animations themself:
 #sinner animations
