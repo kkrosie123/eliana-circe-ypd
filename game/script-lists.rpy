@@ -18,7 +18,6 @@ init python:
         _("):"),
         _(":("),
         _(":/"),
-        _(":\"),
         _(":|"),
         _("o_o"),
         _("D:")
@@ -83,7 +82,7 @@ init python:
         _("you're an idiot"),
         _("you're retarded"),
         _("you're the worst")
-     ]
+    ]
     list_love = [
         _("i love you"),
         _("i love you a lot"),
@@ -103,4 +102,4 @@ init python:
         _("thank you so much"),
         _("ty"),
         _("tysm")
-    [ 
+    ]

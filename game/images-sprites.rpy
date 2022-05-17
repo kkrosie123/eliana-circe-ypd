@@ -4,6 +4,29 @@ image angry_00 = "images/eliana/angry_00.png"
 image angry_01 = "images/eliana/angry_01.png"
 image angry_02 = "images/eliana/angry_02.png"
 image angry_03 = "images/eliana/angry_03.png"
+#angry idle animations
+image angry_idle_00 = "images/eliana/angry_idle_00.png"
+image angry_idle_01 = "images/eliana/angry_idle_01.png"
+image angry_idle_02 = "images/eliana/angry_idle_02.png"
+image angry_idle_03 = "images/eliana/angry_idle_03.png"
+image angry_idle_04 = "images/eliana/angry_idle_04.png"
+#angry idle animations (blinks)
+image angry_idle_blink_00 = "images/eliana/angry_idle_blink_00.png"
+image angry_idle_blink_01 = "images/eliana/angry_idle_blink_01.png"
+image angry_idle_blink_02 = "images/eliana/angry_idle_blink_02.png"
+image angry_idle_blink_03 = "images/eliana/angry_idle_blink_03.png"
+image angry_idle_blink_04 = "images/eliana/angry_idle_blink_04.png"
+#embarrassed
+image embarrassed_00 = "images/eliana/embarrassed_00.png"
+image embarrassed_01 = "images/eliana/embarrassed_01.png"
+image embarrassed_02 = "images/eliana/embarrassed_02.png"
+image embarrassed_03 = "images/eliana/embarrassed_03.png"
+image embarrassed_04 = "images/eliana/embarrassed_04.png"
+#evil
+image evil_00 = "images/eliana/evil_00.png"
+image evil_01 = "images/eliana/evil_01.png"
+image evil_02 = "images/eliana/evil_02.png"
+image evil_03 = "images/eliana/evil_03.png"
 #high affection idle animations
 image high_aff_idle_00 = "images/eliana/high_aff_idle_00.png"
 image high_aff_idle_01 = "images/eliana/high_aff_idle_01.png"
@@ -59,6 +82,18 @@ image low_aff_idle_blink_04 = "images/eliana/low_aff_idle_blink_04.png"
 image neutral_00 = "images/eliana/neutral_00.png"
 image neutral_01 = "images/eliana/neutral_01.png"
 image neutral_02 = "images/eliana/neutral_02.png"
+#sinner idle animations
+image sinner_idle_00 = "images/eliana/sinner_idle_00.png"
+image sinner_idle_01 = "images/eliana/sinner_idle_01.png"
+image sinner_idle_02 = "images/eliana/sinner_idle_02.png"
+image sinner_idle_03 = "images/eliana/sinner_idle_03.png"
+image sinner_idle_04 = "images/eliana/sinner_idle_04.png"
+#sinner idle animations (blinks)
+image sinner_idle_blink_00 = "images/eliana/sinner_idle_blink_00.png"
+image sinner_idle_blink_01 = "images/eliana/sinner_idle_blink_01.png"
+image sinner_idle_blink_02 = "images/eliana/sinner_idle_blink_02.png"
+image sinner_idle_blink_03 = "images/eliana/sinner_idle_blink_03.png"\
+image sinner_idle_blink_04 = "images/eliana/sinner_idle_blink_04.png"
 #talking
 image talking_00 = "images/eliana/talking_00.png"
 image talking_01 = "images/eliana/talking_01.png"

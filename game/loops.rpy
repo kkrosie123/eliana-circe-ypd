@@ -6,7 +6,7 @@ label loops:
         jump loop_idle_low_aff
     if affection_eliana == "normal":
         jump loop_idle
-    if affection_elianna == "high":
+    if affection_eliana == "high":
         jump loop_idle_high_aff
 
 #low aff

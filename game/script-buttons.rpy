@@ -6,14 +6,15 @@ label button_input:
     return
 
 label button_games:
-    if affection_eliana = "low":
-        e "I don't want to play a game with you."
-    elif affection_eliana = "normal":
+    if affection_eliana == "sinner":
+    elif affection_eliana == "low":
+        e "Oh... You want to play a game?"
+    elif affection_eliana == "normal":
         menu:
             e "What game do you want to play?"
             "Nevermind.":
                 e "Oh, okay!"
-    elif affection_eliana = "high":
+    elif affection_eliana == "high":
         menu: 
             e "Yay, ehehe~! What game do you want to play together?"
             "Nevermind.":
