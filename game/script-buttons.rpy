@@ -1,12 +1,15 @@
 #contains the code for quickmenu buttons
 label button_input:
-    $ player_input = renpy.input.("Hey! What's going on?")
-    $ input.lower() # To all lowercase 
+    $ player_input = renpy.input("Hey! What's going on?")
+    $ player_input.lower() # To all lowercase 
     call input_response
     return
 
 label button_games:
     if affection_eliana == "sinner":
+        e "I do not want to play a game with you, sinner."
+    elif affection_eliana == "angry":
+        e "I don't want to play with you."
     elif affection_eliana == "low":
         e "Oh... You want to play a game?"
     elif affection_eliana == "normal":

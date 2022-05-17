@@ -2,19 +2,52 @@
 #calls the needed affection loop
 label loops:
     $ renpy.save_persistent()
-    if affection_eliana == "low":
+    if affection_eliana == "sinner":
+        jump loop_idle_sinner
+    elif affection_eliana == "angry":
+        jump loop_idle_angry
+    elif affection_eliana == "low":
         jump loop_idle_low_aff
-    if affection_eliana == "normal":
+    elif affection_eliana == "normal":
         jump loop_idle
-    if affection_eliana == "high":
+    elif affection_eliana == "high":
         jump loop_idle_high_aff
+
+#sinner 
+label loop_idle_sinner:
+    call animation_idle_sinner
+    call animation_idle_sinner
+    call animation_idle_sinner
+    jump loops
+
+label animation_idle_sinner:
+    call sinner_pose_00
+    call sinner_pose_00
+    call sinner_pose_00
+    call sinner_pose_01
+    call sinner_pose_01
+    call sinner_pose_01
+    call sinner_pose_02
+    call sinner_pose_02
+    call sinner_pose_02
+    call sinner_pose_03
+    call sinner_pose_03
+    call sinner_pose_03
+    call sinner_pose_04
+    call sinner_pose_04
+    call sinner_pose_04
+    return
+
+#angry
+label loop_idle_angry:
+    jump loops
 
 #low aff
 label loop_idle_low_aff:
     call animation_idle_low_aff
     call animation_idle_low_aff
     call animation_idle_low_aff
-    jump label_idle_low_aff
+    jump loops
 
 label animation_idle_low_aff:
     call low_aff_pose_00
@@ -39,7 +72,7 @@ label loop_idle:
     call animation_idle
     call animation_idle
     call animation_idle
-    jump loop_idle
+    jump loops
 
 label animation_idle:
     call normal_aff_pose_00
@@ -61,11 +94,77 @@ label animation_idle:
 
 #high aff
 label loop_idle_high_aff:
-    jump loop_idle_high_aff
+    call animation_idle_high_aff
+    call animation_idle_high_aff
+    call animation_idle_high_aff
+    jump loops
 
 label animation_idle_high_aff:
+    call high_aff_pose_00
+    call high_aff_pose_00
+    call high_aff_pose_00
+    call high_aff_pose_01
+    call high_aff_pose_01
+    call high_aff_pose_01
+    call high_aff_pose_02
+    call high_aff_pose_02
+    call high_aff_pose_02
+    call high_aff_pose_03
+    call high_aff_pose_03
+    call high_aff_pose_03
+    call high_aff_pose_04
+    call high_aff_pose_04
+    call high_aff_pose_04
+    return
 
 #the animations themself:
+#sinner animations
+label sinner_pose_00:
+    show sinner_idle_00
+    $ renpy.pause(5)
+    hide sinner_idle_00
+    show sinner_idle_blink_00
+    $ renpy.pause(0.15)
+    hide sinner_idle_blink_00
+    return
+
+label sinner_pose_01:
+    show sinner_idle_01
+    $ renpy.pause(5)
+    hide sinner_idle_01
+    show sinner_idle_blink_01
+    $ renpy.pause(0.15)
+    hide sinner_idle_blink_01
+    return
+
+label sinner_pose_02:
+    show sinner_idle_02
+    $ renpy.pause(5)
+    hide sinner_idle_02
+    show sinner_idle_blink_02
+    $ renpy.pause(0.15)
+    hide sinner_idle_blink_02
+    return
+
+label sinner_pose_03:
+    show sinner_idle_03
+    $ renpy.pause(5)
+    hide sinner_idle_03
+    show sinner_idle_blink_03
+    $ renpy.pause(0.15)
+    hide sinner_idle_blink_03
+    return
+
+label sinner_pose_04:
+    show sinner_idle_04
+    $ renpy.pause(5)
+    hide sinner_idle_04
+    show sinner_idle_blink_04
+    $ renpy.pause(0.15)
+    hide sinner_idle_blink_04
+    return
+
+#angry animations
 #low aff animations
 label low_aff_pose_00:
     show low_aff_idle_00
@@ -159,3 +258,47 @@ label normal_aff_pose_04:
     return
 
 #high aff animations
+label high_aff_pose_00:
+    show high_aff_idle_00
+    $ renpy.pause(5)
+    hide high_aff_idle_00
+    show high_aff_idle_blink_00
+    $ renpy.pause(0.15)
+    hide high_aff_idle_blink_00
+    return
+
+label high_aff_pose_01:
+    show high_aff_idle_01
+    $ renpy.pause(5)
+    hide high_aff_idle_01
+    show high_aff_idle_blink_01
+    $ renpy.pause(0.15)
+    hide high_aff_idle_blink_01
+    return
+
+label high_aff_pose_02:
+    show high_aff_idle_02
+    $ renpy.pause(5)
+    hide high_aff_idle_02
+    show high_aff_idle_blink_02
+    $ renpy.pause(0.15)
+    hide high_aff_idle_blink_02
+    return
+
+label high_aff_pose_03:
+    show high_aff_idle_03
+    $ renpy.pause(5)
+    hide high_aff_idle_03
+    show high_aff_idle_blink_03
+    $ renpy.pause(0.15)
+    hide high_aff_idle_blink_03
+    return
+
+label high_aff_pose_04:
+    show high_aff_idle_04
+    $ renpy.pause(5)
+    hide high_aff_idle_04
+    show high_aff_idle_blink_04
+    $ renpy.pause(0.15)
+    hide high_aff_idle_blink_04
+    return

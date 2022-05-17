@@ -92,7 +92,7 @@ image sinner_idle_04 = "images/eliana/sinner_idle_04.png"
 image sinner_idle_blink_00 = "images/eliana/sinner_idle_blink_00.png"
 image sinner_idle_blink_01 = "images/eliana/sinner_idle_blink_01.png"
 image sinner_idle_blink_02 = "images/eliana/sinner_idle_blink_02.png"
-image sinner_idle_blink_03 = "images/eliana/sinner_idle_blink_03.png"\
+image sinner_idle_blink_03 = "images/eliana/sinner_idle_blink_03.png"
 image sinner_idle_blink_04 = "images/eliana/sinner_idle_blink_04.png"
 #talking
 image talking_00 = "images/eliana/talking_00.png"

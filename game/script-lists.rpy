@@ -58,21 +58,29 @@ init python:
     ]
     list_insults_bad = [
         _("you're a liar"),
+        _("you're dumb"),
         _("you're mean"),
+        _("you're stupid"),
         _("you suck")
     ]
     list_insults_very_bad = [
         _("asshole"),
         _("asshole cunt"),
         _("bitch"),
+        _("cock"),
         _("cocksucker"),
         _("cunt"),
+        _("dick"),
         _("dike"),
         _("fucktard"),
         _("fuck you"),
         _("gaytard"),
         _("go fuck yourself"),
         _("i hate you"),
+        _("i hate you so much"),
+        _("nigga"),
+        _("retard"),
+        _("retarded"),
         _("shithead"),
         _("slut"),
         _("whore"),
@@ -91,6 +99,7 @@ init python:
         _("i love you more"),
         _("i love you most"),
         _("i love you mostest"),
+        _("i love you mostestest"),
         _("i love you tons"),
         _("love you")
     ]
