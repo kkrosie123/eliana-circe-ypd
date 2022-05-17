@@ -21,7 +21,7 @@ label greeting_happy_itsyou:
 
 #enamored affection greetings (adoration)
 #greetings should include those from the previous tier, these are just unlocked at high affection
-label greeting_adoration_song_we'll_meet_again:
+label greeting_adoration_song_meet_again:
     e "~We'll meet again~"
     e "~Don't know where~"
     e "~Don't know when~"
