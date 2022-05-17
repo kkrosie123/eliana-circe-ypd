@@ -1,6 +1,39 @@
 #contains start greetings
+#defines the list of labels to choose from per affection
+init python: 
+    greetings_upset = [
+        _("greeting_upset_itsyou")
+    ]
+    greeting_upset = random.choice("greetings_upset")
+    greetings_normal = [
+        _("greeting_normal_quips")
+    ]
+    greeting_normal = random.choice("greetings_normal")
+    greetings_happy = [
+        _("greeting_happy_itsyou"),
+        _("greeting_happy_song_meet_again")
+    ]
+    greeting_happy = random.choice("greetings_happy")
+    greetings_adoration = [
+        _("greeting_adoration_song_sunshine"),
+        _("greeting_happy_itsyou"),
+        _("greeting_happy_song_meet_again")
+    ]
+    greeting_adoration = random.choice("greetings_adoration")
+
 #opening the game
 label start:
+    if not seen introduction:
+        call introduction
+    else:
+        if affection_eliana == "sinner" or affection_eliana == "angry":
+            call expression greeting_upset
+        elif affection_eliana == "low" or affection_eliana == "normal":
+            call expression greeting_normal
+        elif affection_eliana == "high" or affection_eliana == "love":
+            call expression greeting_happy
+        elif affection_eliana == "enamored":
+            call expression greeting_adoration
     jump loops
 
 #angry and sinner affection greetings (upset)
