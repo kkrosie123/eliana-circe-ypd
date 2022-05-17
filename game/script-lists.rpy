@@ -37,11 +37,19 @@ init python:
     ]
     list_greetings = [
         _("hello"),
+        _("helloo"),
+        _("hellooo"),
         _("hello there"),
         _("hey"),
+        _("heyy"),
+        _("heyyy",
+        _("hey hi hello"),
         _("hey there"),
         _("hi"),
-        _("hi there")
+        _("hii"),
+        _("hiii"),
+        _("hi there"),
+        _("howdy")
     ]
     list_howareyou = [
         _("how are things"),
@@ -84,12 +92,14 @@ init python:
         _("shithead"),
         _("slut"),
         _("whore"),
+        _("whore slut"),
         _("you're a bitch"),
         _("you're a cow"),
         _("you're a fucking bitch"),
         _("you're an idiot"),
         _("you're retarded"),
-        _("you're the worst")
+        _("you're the worst"),
+        _("you're literally the worst")
     ]
     list_love = [
         _("i love you"),
