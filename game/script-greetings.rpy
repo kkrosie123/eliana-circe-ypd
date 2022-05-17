@@ -16,18 +16,20 @@ label greeting_normal_quips:
 
 #high and love affection greetings (happy)
 label greeting_happy_itsyou:
+    e "Hmm?"
     e "Well would you look at that, it's you~"
     return
 
-#enamored affection greetings (adoration)
-#greetings should include those from the previous tier, these are just unlocked at high affection
-label greeting_adoration_song_meet_again:
+label greeting_happy_song_meet_again:
     e "~We'll meet again~"
     e "~Don't know where~"
     e "~Don't know when~"
     e "~Oh, I know we'll meet again some sunny day~"
     e "Ehehe~ Hello there, Darling~"
     return
+
+#enamored affection greetings (adoration)
+#greetings should include those from the previous tier, these are just unlocked at high affection
     
 label greeting_adoration_song_sunshine:
     e "~You are my sunshine~"
@@ -80,5 +82,6 @@ label introduction:
         "Definitely not thirsty for you.":
             e "Okay, rude!"
     e "Listen here, I'm gonna help you with... all of this, okay?"
+    e "Don't tell the Devil."
     return
     
