@@ -1,29 +1,32 @@
 #contains start greetings
 #defines the list of labels to choose from per affection
 init python: 
+    import random
     greetings_upset = [
         _("greeting_upset_itsyou")
     ]
-    greeting_upset = random.choice("greetings_upset")
+    greeting_upset = random.choice(greetings_upset)
     greetings_normal = [
-        _("greeting_normal_quips")
+        _("greeting_normal_quips"),
+        _("greeting_normal_unexpected")
     ]
-    greeting_normal = random.choice("greetings_normal")
+    greeting_normal = random.choice(greetings_normal)
     greetings_happy = [
         _("greeting_happy_itsyou"),
         _("greeting_happy_song_meet_again")
     ]
-    greeting_happy = random.choice("greetings_happy")
+    greeting_happy = random.choice(greetings_happy)
     greetings_adoration = [
         _("greeting_adoration_song_sunshine"),
         _("greeting_happy_itsyou"),
-        _("greeting_happy_song_meet_again")
+        _("greeting_happy_song_meet_again"),
+        _("greeting_normal_quips")
     ]
-    greeting_adoration = random.choice("greetings_adoration")
+    greeting_adoration = random.choice(greetings_adoration)
 
 #opening the game
 label start:
-    if not seen introduction:
+    if not renpy.seen_label("introduction"):
         call introduction
     else:
         if affection_eliana == "sinner" or affection_eliana == "angry":
@@ -45,6 +48,16 @@ label greeting_upset_itsyou:
 
 #normal and low affection greetings (normal)
 label greeting_normal_quips:
+    e "[greeting_quip]"
+    e "[greeting_follow_up_quip]"
+    return
+
+label greeting_normal_unexpected:
+    e "..."
+    e "..."
+    e "!!!"
+    e "Hey, sorry, I didn't expect you back so soon!"
+    e "[greeting_follow_up_quip]"
     return
 
 #high and love affection greetings (happy)
@@ -89,10 +102,8 @@ label introduction:
     "..."
     "Should I even get out of bed today?"
     "..."
-    "..."
     "No."
     "There's no point."
-    "..."
     "..."
     "Wait, what's happening?"
     "!!!"

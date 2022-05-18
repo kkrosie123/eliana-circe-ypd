@@ -20,3 +20,7 @@ init python:
 
 #registers Eliana as a character
 define e = Character("Eliana", color="#c55e5e")
+define s = Character("Satan", color="#500000")
+
+#default persistent values
+default player = "Sinner"

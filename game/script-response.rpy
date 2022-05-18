@@ -22,6 +22,8 @@ label input_response:
         call response_insults_very_bad
     elif player_input in "list_love":
         call response_love
+    elif player_input in "list_name":
+        call response_name
     elif player_input in "list_thanks":
         call response_thanks
     else:
@@ -35,7 +37,7 @@ label no_response:
     return
 
 label response_compliments_beautiful:
-    if affection_eliana == "high" affection_eliana == "love" or affection_eliana == "enamored":
+    if affection_eliana == "high" or affection_eliana == "love" or affection_eliana == "enamored":
         e "Aww, thank you!"
         e "That's so sweet of you!"
         e "I think you're very beautiful, too."
@@ -59,6 +61,8 @@ label response_emotes_good:
     return
 
 label response_greetings:
+    e "[greeting_quip]"
+    e "[greeting_follow_up_quip]"
     return
 
 label response_howareyou:
@@ -101,13 +105,25 @@ label response_insults_very_bad:
         e "Why...?"
         e "That's awful."
         e "..."
-        e "..."
-        e "..."
+        e "I can't believe you..."
     $ affection_value -= 20
     return
 
 label response_love:
+    if affection_eliana == "love" or affection_eliana == "enamored":
+        e "[love_quip]"
     return
+
+label response_name:
+    if renpy.seen_label("response_name"):
+        e "Oh? You want to change your name?"
+    $ player = renpy.input("What should I call you?")
+    $ player = player.strip()
+    $ player = player.capitalize()
+    if player == "":
+        $ player = "Sinner"
+        e "Um... You didn't say anything."
+    e "Okay, I'll call you [player] from now on."
 
 label response_thanks:
     return

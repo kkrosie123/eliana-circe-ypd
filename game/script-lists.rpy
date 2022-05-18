@@ -42,7 +42,7 @@ init python:
         _("hello there"),
         _("hey"),
         _("heyy"),
-        _("heyyy",
+        _("heyyy"),
         _("hey hi hello"),
         _("hey there"),
         _("hi"),
@@ -113,6 +113,18 @@ init python:
         _("i love you tons"),
         _("love you")
     ]
+    list_name = [
+        _("change my name"),
+        _("change name"),
+        _("change what you call me"),
+        _("i want to be called something else"),
+        _("i want to change my name"),
+        _("my name"),
+        _("name"),
+        _("preferred name"),
+        _("stop calling me a sinner"),
+        _("stop calling me sinner")
+    ]
     list_thanks = [
         _("thanks"),
         _("thanks bunches"),
@@ -120,5 +132,6 @@ init python:
         _("thank you"),
         _("thank you so much"),
         _("ty"),
-        _("tysm")
+        _("tysm"),
+        _("tyvm")
     ]

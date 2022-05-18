@@ -23,6 +23,16 @@ init python:
         _("What should we do today?")
     ]
     greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
+    love_quips = [
+        _("I love and adore you!"),
+        _("I love you more!"),
+        _("I love you most!"),
+        _("I love you too!"),
+        _("I looooove you, [player]!"),
+        _("I love you soooo much!"),
+        _("You're so amazing! I love you!")
+    ]
+    love_quip = random.choice(love_quips)
     #no response
     no_response_quips = [
         _("Hmm, I don't have anything to say."),
@@ -45,6 +55,7 @@ init python:
     ]
     thanks_quip = random.choice(thanks_quips)
     thanks_reluctant_quips = [
+        _("Oh... Uh, thanks?"),
         _("Uh... Thanks, I guess.")
     ]
     thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
