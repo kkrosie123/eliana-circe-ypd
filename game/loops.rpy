@@ -22,6 +22,7 @@ label loop_idle_sinner:
     call animation_idle_sinner
     call animation_idle_sinner
     call animation_idle_sinner
+    call expression random_chatter
     jump loops
 
 label animation_idle_sinner:
@@ -51,6 +52,7 @@ label loop_idle_low_aff:
     call animation_idle_low_aff
     call animation_idle_low_aff
     call animation_idle_low_aff
+    call expression random_chatter
     jump loops
 
 label animation_idle_low_aff:
@@ -76,6 +78,7 @@ label loop_idle:
     call animation_idle
     call animation_idle
     call animation_idle
+    call expression random_chatter
     jump loops
 
 label animation_idle:
@@ -101,6 +104,7 @@ label loop_idle_high_aff:
     call animation_idle_high_aff
     call animation_idle_high_aff
     call animation_idle_high_aff
+    call expression random_chatter
     jump loops
 
 label animation_idle_high_aff:

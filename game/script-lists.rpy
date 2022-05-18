@@ -35,6 +35,14 @@ init python:
         _("uwo"),
         _("uwu")
     ]
+    list_flip_coin = [
+        _("coin"),
+        _("coin flip"),
+        _("flip"),
+        _("flip a coin"),
+        _("flip coin"),
+        _("heads or tails")
+    ]
     list_greetings = [
         _("hello"),
         _("helloo"),

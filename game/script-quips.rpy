@@ -1,6 +1,12 @@
 #contains eliana's quips
 init python:
     import random
+    #coin flip
+    flip_coin_quips = [
+        _("heads"),
+        _("tails")
+    ]
+    flip_coin_quip = random.choice(flip_coin_quips)
     #hello
     greeting_quips = [
         _("Hello!"),
@@ -23,6 +29,16 @@ init python:
         _("What should we do today?")
     ]
     greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
+    #how are you response
+    howareyou_quips = [
+        _("I'm doing alright!"),
+        _("I'm doing good!"),
+        _("I'm doing great!"),
+        _("I'm doing okay!"),
+        _("I'm doing well!")
+    ]
+    howareyou_quip = random.choice(howareyou_quips)
+    #love
     love_quips = [
         _("I love and adore you!"),
         _("I love you more!"),

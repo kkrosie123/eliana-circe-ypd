@@ -10,6 +10,8 @@ label input_response:
         call response_emotes_bad
     elif player_input in list_emotes_good:
         call response_emotes_good
+    elif player_input in list_flip_coin:
+        call response_flip_coin
     elif player_input in list_greetings:
         call response_greetings
     elif player_input in list_howareyou:
@@ -44,12 +46,29 @@ label response_compliments_beautiful:
         e "Ehehe!"
     else:
         e "[thanks_reluctant_quip]"
+    $ affection_eliana += 1
     return
 
 label response_compliments_caring:
+    if affection_eliana == "high" or affection_eliana == "love" or affection_eliana == "enamored":
+        e "Ehehe, thanks!"
+        e "I'm glad you think so."
+        e "You make me feel very loved and cared for~"
+    else:
+        e "[thanks_reluctant_quip]"
+    $ affection_eliana += 1
     return
 
 label response_compliments_kind:
+    if affection_eliana == "high" or affection_eliana == "love" or affection_eliana == "enamored":
+        e "Aww, thank you!"
+        e "You're so sweet."
+        e "But you do know I'm a demonic creature, right?"
+        e "I'm not meant to be kind to anyone."
+        e "But perhaps I want you all to myself!"
+    else:
+        e "[thanks_reluctant_quip]"
+    $ affection_eliana += 1
     return
 
 label response_emotes_bad:
@@ -60,12 +79,19 @@ label response_emotes_good:
     e "Ehehe, what are you smiling for?"
     return
 
+label response_flip_coin:
+    e "Alright, I'll flip a coin for you."
+    e "It landed on [flip_coin_quip]!"
+    return
+
 label response_greetings:
     e "[greeting_quip]"
     e "[greeting_follow_up_quip]"
     return
 
 label response_howareyou:
+    e "[howareyou_quip]"
+    e "[greeting_follow_up_quip]"
     return
 
 label response_hugs:
