@@ -107,25 +107,60 @@ label introduction:
     "..."
     "Wait, what's happening?"
     "!!!"
+    show evil_01
     e "AHAHAHAHAHA~!"
+    hide evil_01
+    show evil_02
     e "YOUR DEMISE IS NOW, DIRTY SINNER!!!"
+    hide evil_02
+    show evil_03
     e "I AM ELIANA CIRCE, I HAVE COME FROM THE DEPTHS TO TORMENT YOU!"
+    hide evil_03
+    show evil_00
     e "QUIVER AT MY WRATH! FOR I-"
+    hide evil_00
+    show embarrassed_00
     e "Oh satan! What's all this?"
+    hide embarrassed_00
+    show embarrassed_01
     e "Oh my, oh my..."
+    hide embarrassed_01
+    show low_aff_idle_00
     e "I was sent here to torment you, but now I feel guilty..."
+    hide low_aff_idle_00
+    show embarrassed_03
     e "It's like you torment yourself!"
+    hide embarrassed_03
+    show embarrassed_01
     e "Oh gosh..."
+    hide embarrassed_01
+    show low_aff_idle_02
     e "..."
+    hide low_aff_idle_02
+    show embarrassed_02
     e "Um... I came to torment you for being a thirsty sinner."
+    hide embarrassed_02
+    show angry_02
     e "Like, to the EXTREME! Do you know how thirsty you are?"
     menu:
         "Thirsty for you.":
+            hide angry_02
+            show embarrassed_00
             e "!!!"
+            hide embarrassed_00
+            show embarrassed_01
             e "Well, see? Now you're just proving my point!"
+            hide embarrassed_01
         "Definitely not thirsty for you.":
+            hide angry_02
+            show angry_03
             e "Okay, rude!"
+            hide angry_03
+    show low_aff_idle_01
     e "Listen here, I'm gonna help you with... all of this, okay?"
+    hide low_aff_idle_01
+    show angry_idle_03
     e "Don't tell the Devil."
+    hide angry_idle_03
     return
     
