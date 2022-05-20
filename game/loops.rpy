@@ -183,138 +183,108 @@ label sinner_pose_04:
 #angry animations
 #low aff animations
 label low_aff_pose_00:
-    show low_aff_idle_00
+    show eliana low_aff_idle_00
     $ renpy.pause(5)
-    hide low_aff_idle_00
-    show low_aff_idle_blink_00
+    show eliana low_aff_idle_blink_00
     $ renpy.pause(0.15)
-    hide low_aff_idle_blink_00
     return
 
 label low_aff_pose_01:
-    show low_aff_idle_01
+    show eliana low_aff_idle_01
     $ renpy.pause(5)
-    hide low_aff_idle_01
-    show low_aff_idle_blink_01
+    show eliana low_aff_idle_blink_01
     $ renpy.pause(0.15)
-    hide low_aff_idle_blink_01
     return
 
 label low_aff_pose_02:
-    show low_aff_idle_02
+    show eliana low_aff_idle_02
     $ renpy.pause(5)
-    hide low_aff_idle_02
-    show low_aff_idle_blink_02
+    show eliana low_aff_idle_blink_02
     $ renpy.pause(0.15)
-    hide low_aff_idle_blink_02
     return
 
 label low_aff_pose_03:
-    show low_aff_idle_03
+    show eliana low_aff_idle_03
     $ renpy.pause(5)
-    hide low_aff_idle_03
-    show low_aff_idle_blink_03
+    show eliana low_aff_idle_blink_03
     $ renpy.pause(0.15)
-    hide low_aff_idle_blink_03
     return
 
 label low_aff_pose_04:
-    show low_aff_idle_04
+    show eliana low_aff_idle_04
     $ renpy.pause(5)
-    hide low_aff_idle_04
-    show low_aff_idle_blink_04
+    show eliana low_aff_idle_blink_04
     $ renpy.pause(0.15)
-    hide low_aff_idle_blink_04
     return
 
 #normal aff animations
 label normal_aff_pose_00:
-    show idle_00
+    show eliana idle_00
     $ renpy.pause(5)
-    hide idle_00
-    show idle_blink_00
+    show eliana  idle_blink_00
     $ renpy.pause(0.15)
-    hide idle_blink_00
     return
 
 label normal_aff_pose_01:
-    show idle_01
+    show eliana idle_01
     $ renpy.pause(5)
-    hide idle_01
-    show idle_blink_01
+    show eliana idle_blink_01
     $ renpy.pause(0.15)
-    hide idle_blink_01
     return
 
 label normal_aff_pose_02:
-    show idle_02
+    show eliana idle_02
     $ renpy.pause(5)
-    hide idle_02
-    show idle_blink_02
+    show eliana idle_blink_02
     $ renpy.pause(0.15)
-    hide idle_blink_02
     return
 
 label normal_aff_pose_03:
-    show idle_03
+    show eliana idle_03
     $ renpy.pause(5)
-    hide idle_03
-    show idle_blink_03
+    show eliana idle_blink_03
     $ renpy.pause(0.15)
-    hide idle_blink_03
     return
 
 label normal_aff_pose_04:
-    show idle_04
+    show eliana idle_04
     $ renpy.pause(5)
-    hide idle_04
-    show idle_blink_04
+    show eliana idle_blink_04
     $ renpy.pause(0.15)
-    hide idle_blink_04
     return
 
 #high aff animations
 label high_aff_pose_00:
-    show high_aff_idle_00
+    show eliana high_aff_idle_00
     $ renpy.pause(5)
-    hide high_aff_idle_00
-    show high_aff_idle_blink_00
+    show eliana high_aff_idle_blink_00
     $ renpy.pause(0.15)
-    hide high_aff_idle_blink_00
     return
 
 label high_aff_pose_01:
-    show high_aff_idle_01
+    show eliana high_aff_idle_01
     $ renpy.pause(5)
-    hide high_aff_idle_01
-    show high_aff_idle_blink_01
+    show eliana high_aff_idle_blink_01
     $ renpy.pause(0.15)
-    hide high_aff_idle_blink_01
     return
 
 label high_aff_pose_02:
-    show high_aff_idle_02
+    show eliana high_aff_idle_02
     $ renpy.pause(5)
-    hide high_aff_idle_02
-    show high_aff_idle_blink_02
+    show eliana high_aff_idle_blink_02
     $ renpy.pause(0.15)
-    hide high_aff_idle_blink_02
     return
 
 label high_aff_pose_03:
-    show high_aff_idle_03
+    show eliana high_aff_idle_03
     $ renpy.pause(5)
-    hide high_aff_idle_03
-    show high_aff_idle_blink_03
+    show eliana high_aff_idle_blink_03
     $ renpy.pause(0.15)
-    hide high_aff_idle_blink_03
     return
 
 label high_aff_pose_04:
-    show high_aff_idle_04
+    show eliana high_aff_idle_04
     $ renpy.pause(5)
-    hide high_aff_idle_04
-    show high_aff_idle_blink_04
+    show eliana high_aff_idle_blink_04
     $ renpy.pause(0.15)
-    hide high_aff_idle_blink_04
     return
