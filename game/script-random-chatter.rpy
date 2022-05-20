@@ -14,9 +14,10 @@ init python:
 label random_chatter_rare_entry:
     $ rare_chatter_chance = renpy.random.randint(1,15)
     if rare_chatter_chance == 1:
-        call expression random_chatter_rare
+        call expression rare_chatter
     else:
         call expression random_chatter
+    return
 
 #random chatter
 label random_chatter_seven_sins:
