@@ -1,7 +1,6 @@
 ﻿#contains definitions and technical stuff
 #set affection
 init python: 
-    renpy.block_rollback()
     affection_value = -50
     if affection_value < -100 and affection_valie > -500:
         affection_eliana = "sinner"
