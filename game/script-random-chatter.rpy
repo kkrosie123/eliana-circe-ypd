@@ -20,6 +20,29 @@ label random_chatter_rare_entry:
     return
 
 #random chatter
+label random_chatter_sacrifices:
+    e "Hey, [player]?"
+    e "Have you ever heard of demonic sacrifices?"
+    e "Why do people do that garbage???"
+    e "The last thing we need is another dead goat!"
+    e "What am I supposed to do with all of these animals??"
+    e "Like, we don't eat them or anything..."
+    e "Just another soul we have to deal with."
+    e "Hell is only so big, you know?"
+    e "Please, PLEASE don't send me anything like that."
+    e "If you're gonna sacrifice anything, how about something I can actually, I dunno, use?"
+    e "Like a soft plushie..."
+    e "..."
+    e "We don't get many nice things in hell."
+    e "All of the sinners."
+    e "You know, pieces of crap type people."
+    e "I'm lucky enough that I get to come to Earth."
+    e "There is some good here."
+    if affection_eliana == "love" or affection_eliana == "enamored":
+        e "Like you..."
+    return
+
+
 label random_chatter_seven_sins:
     e "Hmm..."
     e "Say, have you heard of the Seven Deadly Sins?"
