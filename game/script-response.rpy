@@ -46,7 +46,7 @@ label response_compliments_beautiful:
         e "Ehehe!"
     else:
         e "[thanks_reluctant_quip]"
-    $ affection_eliana += 1
+    $ affection_value += 1
     return
 
 label response_compliments_caring:
@@ -56,7 +56,7 @@ label response_compliments_caring:
         e "You make me feel very loved and cared for~"
     else:
         e "[thanks_reluctant_quip]"
-    $ affection_eliana += 1
+    $ affection_value += 1
     return
 
 label response_compliments_kind:
@@ -68,7 +68,7 @@ label response_compliments_kind:
         e "But perhaps I want you all to myself!"
     else:
         e "[thanks_reluctant_quip]"
-    $ affection_eliana += 1
+    $ affection_value += 1
     return
 
 label response_emotes_bad:
