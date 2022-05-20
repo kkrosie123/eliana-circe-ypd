@@ -119,7 +119,7 @@ label response_insults_bad:
         e "Why would you say that to me?"
         e "Grr-"
         e "..."
-    $ affection_eliana -= 5
+    $ affection_value -= 5
     return
 
 label response_insults_very_bad:

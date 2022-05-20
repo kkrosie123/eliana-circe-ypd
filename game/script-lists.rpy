@@ -12,7 +12,8 @@ init python:
     list_compliments_kind = [
         _("you're kind"),
         _("you're nice"),
-        _("you're so kind")
+        _("you're so kind"),
+        _("you're so nice")
     ]
     list_emotes_bad = [
         _("):"),

@@ -30,12 +30,17 @@ label start:
         call introduction
     else:
         if affection_eliana == "sinner" or affection_eliana == "angry":
+            show room_mess_03
+            show filter_red
             call expression greeting_upset
         elif affection_eliana == "low" or affection_eliana == "normal":
+            show room_mess_03
             call expression greeting_normal
         elif affection_eliana == "high" or affection_eliana == "love":
+            show room_mess_02
             call expression greeting_happy
         elif affection_eliana == "enamored":
+            show room_mess_01
             call expression greeting_adoration
     jump loops
 
@@ -93,6 +98,7 @@ label greeting_adoration_song_sunshine:
 
 #the actual intro for the game
 label introduction:
+    show room_mess_03
     "..."
     "It's a normal day."
     "..."
@@ -107,6 +113,7 @@ label introduction:
     "..."
     "Wait, what's happening?"
     "!!!"
+    show filter_red
     show evil_01
     e "AHAHAHAHAHA~!"
     hide evil_01
@@ -119,6 +126,7 @@ label introduction:
     show evil_00
     e "QUIVER AT MY WRATH! FOR I-"
     hide evil_00
+    hide filter_red
     show embarrassed_00
     e "Oh satan! What's all this?"
     hide embarrassed_00
