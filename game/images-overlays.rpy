@@ -1,3 +1,3 @@
 #overlays, such as filters
 #color filters
-image filter_red = "images/filters/red.png"
+image filter_type red = "images/filters/red.png"
