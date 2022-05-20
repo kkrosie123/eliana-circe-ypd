@@ -147,8 +147,12 @@ label introduction:
     hide low_aff_idle_02
     show embarrassed_02
     e "Um... I came to torment you for being a thirsty sinner."
+<<<<<<< Updated upstream
     hide embarrassed_02
     show angry_02
+=======
+    show eliana angry_02
+>>>>>>> Stashed changes
     e "Like, to the EXTREME! Do you know how thirsty you are?"
     menu:
         "Thirsty for you.":
