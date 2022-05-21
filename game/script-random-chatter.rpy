@@ -3,6 +3,7 @@ init python:
     import random
     random_chatter_list = [
         _("random_chatter_rare_entry"),
+        _("random_chatter_sacrifices"),
         _("random_chatter_seven_sins")
     ]
     random_chatter = random.choice(random_chatter_list)
@@ -12,6 +13,7 @@ init python:
     rare_chatter = random.choice(rare_chatter_list)
 
 label random_chatter_rare_entry:
+    $ rare_chatter = random.choice(rare_chatter_list)
     $ rare_chatter_chance = renpy.random.randint(1,15)
     if rare_chatter_chance == 1:
         call expression rare_chatter
@@ -64,4 +66,10 @@ label rare_chatter_pixel_thirst:
     e "You really are a sinner."
     e "Thirsting after me when I'm nothing but pixels."
     e "...Ehehe."
+    return
+
+label rare_chatter_dating_games:
+    e "Why do people play dating games?"
+    e "Shouldn't they just go out and, I don't know, get a real girlfriend?"
+    e "Ehehe."
     return

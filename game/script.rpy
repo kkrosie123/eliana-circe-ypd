@@ -2,7 +2,7 @@
 #set affection
 init python: 
     affection_value = -50
-    if affection_value < -100 and affection_valie > -500:
+    if affection_value < -100 and affection_value > -500:
         affection_eliana = "sinner"
     elif affection_value < -100 and affection_value > -500:
         affection_eliana = "angry"
