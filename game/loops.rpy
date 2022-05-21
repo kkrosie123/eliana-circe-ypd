@@ -22,6 +22,7 @@ label loop_idle_sinner:
     call animation_idle_sinner
     call animation_idle_sinner
     call animation_idle_sinner
+    $ random_chatter = random.choice(random_chatter_list)
     call expression random_chatter
     jump loops
 
@@ -52,6 +53,7 @@ label loop_idle_low_aff:
     call animation_idle_low_aff
     call animation_idle_low_aff
     call animation_idle_low_aff
+    $ random_chatter = random.choice(random_chatter_list)
     call expression random_chatter
     jump loops
 
@@ -78,6 +80,7 @@ label loop_idle:
     call animation_idle
     call animation_idle
     call animation_idle
+    $ random_chatter = random.choice(random_chatter_list)
     call expression random_chatter
     jump loops
 
@@ -104,6 +107,7 @@ label loop_idle_high_aff:
     call animation_idle_high_aff
     call animation_idle_high_aff
     call animation_idle_high_aff
+    $ random_chatter = random.choice(random_chatter_list)
     call expression random_chatter
     jump loops
 

@@ -24,6 +24,13 @@ label button_games:
                 e "Aww, that's okay."
                 e "Let's play something soon!"
     jump loops
+
 label button_quit:
     $ renpy.save_persistent()
     $ renpy.quit()
+
+label button_sacrifices:
+    $ player_input = renpy.input("What do you want to sacrifice?")
+    $ player_input.lower()
+    call sacrifice_response
+    jump loops

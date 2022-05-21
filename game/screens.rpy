@@ -260,6 +260,9 @@ screen quick_menu():
             textbutton _("Games") action Jump("button_games")
             textbutton _("Quit") action Jump("button_quit")
 
+            if renpy.seen_label("random_chatter_sacrifices"):
+                textbutton _("Sacrifices") action Jump("button_sacrifices")
+
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
@@ -298,6 +301,7 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
+            xalign -2.0
 
             textbutton("It's time to wake up.") action Start()
 
