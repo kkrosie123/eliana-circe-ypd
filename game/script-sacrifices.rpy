@@ -2,7 +2,9 @@
 
 #where it calls a reaction/registers the sacrifice
 label sacrifice_response:
-    if player_input in gifts_goat:
+    if player_input in gifts_bible:
+        call sacrifice_bible
+    elif player_input in gifts_goat:
         if not renpy.seen_label("sacrifice_goat_unseen"):
             call sacrifice_goat_unseen
         elif renpy.seen_label("sacrifice_goat_unseen"):
@@ -16,6 +18,16 @@ label sacrifice_response:
 #reactions
 label cannot_sacrifice:
     "You can't sacrifice this."
+    return
+
+label sacrifice_bible:
+    e "..."
+    e "Um..."
+    e "A... A bible?"
+    e "Um... You want me to read about the tyrant that downcasted my father to hell?"
+    e "No thanks. I've heard it all before."
+    e "Please don't give me this garbage. I like books, but this is just garbage."
+    $ affection_value -= 10
     return
 
 label sacrifice_goat:
