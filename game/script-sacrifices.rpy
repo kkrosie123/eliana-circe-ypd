@@ -7,6 +7,8 @@ label sacrifice_response:
             call sacrifice_goat_unseen
         elif renpy.seen_label("sacrifice_goat_unseen"):
             call sacrifice_goat
+    elif player_input in gifts_plush:
+        call sacrifice_plush
     else:
         call cannot_sacrifice
     return
@@ -28,4 +30,12 @@ label sacrifice_goat_unseen:
     e "..."
     e "Just another soul to deal with..."
     $ affection_value -= 20
+    return
+
+label sacrifice_plush:
+    e "Ohhh my satan!"
+    e "It's so cute!"
+    e "Thank you, [player]!"
+    e "I love it!"
+    $ affection_value += 10
     return
