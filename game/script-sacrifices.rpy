@@ -9,6 +9,8 @@ label sacrifice_response:
             call sacrifice_goat_unseen
         elif renpy.seen_label("sacrifice_goat_unseen"):
             call sacrifice_goat
+    elif player_input in gifts_holy_water:
+        call sacrifice_holy_water
     elif player_input in gifts_plush:
         call sacrifice_plush
     else:
@@ -42,6 +44,21 @@ label sacrifice_goat_unseen:
     e "..."
     e "Just another soul to deal with..."
     $ affection_value -= 20
+    return
+
+label sacrifice_holy_water:
+    e "EEEEEEEEEEEEEEK!!!"
+    e "NO, NO!!!"
+    e "WHY WOULD YOU-"
+    e "GET THAT AWAY FROM ME!!!"
+    e "AGH- EEK-"
+    e "!!!"
+    e "...!"
+    e "..."
+    e "..."
+    e "D-Don't... don't do that..."
+    e "Don't do that to me..."
+    $ affection_value -= 50
     return
 
 label sacrifice_plush:

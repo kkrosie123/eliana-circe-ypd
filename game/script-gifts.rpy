@@ -11,6 +11,10 @@ init python:
         _("goat"),
         _("goats")
     ]
+    gifts_holy_water = [
+        _("blessed water"),
+        _("holy water")
+    ]
     gifts_plush = [
         _("plushie"),
         _("plushies"),
