@@ -140,48 +140,38 @@ label loop_idle_enamored:
 #the animations themself:
 #sinner animations
 label sinner_pose_00:
-    show sinner_idle_00
+    show eliana sinner_idle_00
     $ renpy.pause(5)
-    hide sinner_idle_00
-    show sinner_idle_blink_00
+    show eliana sinner_idle_blink_00
     $ renpy.pause(0.15)
-    hide sinner_idle_blink_00
     return
 
 label sinner_pose_01:
-    show sinner_idle_01
+    show eliana sinner_idle_01
     $ renpy.pause(5)
-    hide sinner_idle_01
-    show sinner_idle_blink_01
+    show eliana sinner_idle_blink_01
     $ renpy.pause(0.15)
-    hide sinner_idle_blink_01
     return
 
 label sinner_pose_02:
-    show sinner_idle_02
+    show eliana sinner_idle_02
     $ renpy.pause(5)
-    hide sinner_idle_02
-    show sinner_idle_blink_02
+    show eliana sinner_idle_blink_02
     $ renpy.pause(0.15)
-    hide sinner_idle_blink_02
     return
 
 label sinner_pose_03:
-    show sinner_idle_03
+    show eliana sinner_idle_03
     $ renpy.pause(5)
-    hide sinner_idle_03
-    show sinner_idle_blink_03
+    show eliana sinner_idle_blink_03
     $ renpy.pause(0.15)
-    hide sinner_idle_blink_03
     return
 
 label sinner_pose_04:
-    show sinner_idle_04
+    show eliana sinner_idle_04
     $ renpy.pause(5)
-    hide sinner_idle_04
-    show sinner_idle_blink_04
+    show eliana sinner_idle_blink_04
     $ renpy.pause(0.15)
-    hide sinner_idle_blink_04
     return
 
 #angry animations

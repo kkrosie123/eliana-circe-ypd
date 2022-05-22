@@ -2,7 +2,7 @@
 
 #where it calls a reaction/registers the sacrifice
 label sacrifice_response:
-    if player_input in "gifts_goat":
+    if player_input in gifts_goat:
         if not renpy.seen_label("sacrifice_goat_unseen"):
             call sacrifice_goat_unseen
         elif renpy.seen_label("sacrifice_goat_unseen"):

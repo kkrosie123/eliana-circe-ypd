@@ -75,3 +75,8 @@ init python:
         _("Uh... Thanks, I guess.")
     ]
     thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
+    youre_welcome_quips = [
+        _("Ehehe, no problem!"),
+        _("Oh! You're welcome!")
+    ]
+    youre_welcome_quip = random.choice(youre_welcome_quips)

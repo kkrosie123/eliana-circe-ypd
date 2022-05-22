@@ -138,6 +138,9 @@ label response_insults_very_bad:
 label response_love:
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "[love_quip]"
+    else: 
+        e "Um..."
+        e "It's a bit too early for that..."
     return
 
 label response_name:
@@ -152,4 +155,5 @@ label response_name:
     e "Okay, I'll call you [player] from now on."
 
 label response_thanks:
+    [youre_welcome_quip]
     return

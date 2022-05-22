@@ -258,10 +258,11 @@ screen quick_menu():
             textbutton _("Prefs") action ShowMenu('preferences')
             textbutton _("Talk") action Jump("button_input")
             textbutton _("Games") action Jump("button_games")
-            textbutton _("Quit") action Jump("button_quit")
 
             if renpy.seen_label("random_chatter_sacrifices"):
                 textbutton _("Sacrifices") action Jump("button_sacrifices")
+            
+            textbutton _("Quit") action Jump("button_quit")
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
