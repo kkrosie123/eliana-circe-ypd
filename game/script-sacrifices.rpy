@@ -23,22 +23,27 @@ label cannot_sacrifice:
     return
 
 label sacrifice_bible:
+    show eliana angry_idle_03
     e "..."
     e "Um..."
     e "A... A bible?"
     e "Um... You want me to read about the tyrant that downcasted my father to hell?"
+    show eliana angry_idle_blink_03
     e "No thanks. I've heard it all before."
+    show eliana angry_idle_03
     e "Please don't give me this garbage. I like books, but this is just garbage."
     $ affection_value -= 10
     return
 
 label sacrifice_goat:
+    show eliana angry_idle_02
     e "ARE YOU KIDDING ME?"
     e "STOP IT!"
     $ affection_value -= 20
     return
 
 label sacrifice_goat_unseen:
+    show eliana angry_02
     e "Are you serious right now??"
     e "A dead goat?"
     e "..."
@@ -47,23 +52,32 @@ label sacrifice_goat_unseen:
     return
 
 label sacrifice_holy_water:
+    show eliana terrified_03
     e "EEEEEEEEEEEEEEK!!!"
     e "NO, NO!!!"
+    show eliana terrified_04
     e "WHY WOULD YOU-"
+    show eliana terrified_03
     e "GET THAT AWAY FROM ME!!!"
     e "AGH- EEK-"
+    show eliana terrified_01
     e "!!!"
     e "...!"
     e "..."
+    show eliana terrified_02
     e "..."
+    show eliana terrified_00
     e "D-Don't... don't do that..."
     e "Don't do that to me..."
     $ affection_value -= 50
     return
 
 label sacrifice_plush:
+    show eliana high_aff_idle_00
     e "Ohhh my satan!"
+    show eliana high_aff_idle_01
     e "It's so cute!"
+    show eliana high_aff_idle_blink_00
     e "Thank you, [player]!"
     e "I love it!"
     $ affection_value += 10
