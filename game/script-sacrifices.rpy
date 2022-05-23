@@ -6,6 +6,8 @@ label sacrifice_response:
         call sacrifice_bible
     elif player_input in gifts_cross:
         call sacrifice_cross
+    elif player_input in gifts_evil_eye:
+        call sacrifice_evil_eye
     elif player_input in gifts_goat:
         if not renpy.seen_label("sacrifice_goat_unseen"):
             call sacrifice_goat_unseen
@@ -45,6 +47,16 @@ label sacrifice_cross:
     show eliana angry_idle_00
     e "Good luck. I'm not going anywhere."
     $ affection_value -= 10
+    return
+
+label sacrifice_evil_eye:
+    show eliana angry_idle_01
+    e "Are you... trying to curse me?"
+    show eliana angry_02
+    e "Hah. Good luck, [sinner]."
+    show eliana angry_00
+    e "Still, that's rude."
+    $ affection_value -= 5
     return
 
 label sacrifice_goat:

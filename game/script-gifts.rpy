@@ -10,6 +10,9 @@ init python:
         _("cross"),
         _("crucifix")
     ]
+    gifts_evil_eye = [
+        _("evil eye")
+    ]
     gifts_goat = [
         _("dead goat"),
         _("goat"),
