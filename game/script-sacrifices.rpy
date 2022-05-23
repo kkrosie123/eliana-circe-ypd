@@ -17,6 +17,8 @@ label sacrifice_response:
         call sacrifice_holy_water
     elif player_input in gifts_plush:
         call sacrifice_plush
+    elif player_input in gifts_salt:
+        call sacrifice_salt
     else:
         call cannot_sacrifice
     return
@@ -105,4 +107,16 @@ label sacrifice_plush:
     e "Thank you, [player]!"
     e "I love it!"
     $ affection_value += 10
+    return
+
+label sacrifice_salt:
+    show eliana angry_01
+    e "Hey! That's not funny!"
+    show eliana angry_03
+    e "Are you trying to keep me away from you?"
+    show eliana angry_02
+    e "Hah! As if!"
+    show eliana angry_01
+    e "A circle of salt won't keep you from me."
+    e "Don't try anything, [player]."
     return

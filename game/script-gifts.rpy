@@ -30,3 +30,7 @@ init python:
         _("stuffed toy"),
         _("stuffed toys")
     ]
+    gifts_salt = [
+        _("salt"),
+        _("salt circle")
+    ]
