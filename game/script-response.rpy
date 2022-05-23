@@ -153,6 +153,7 @@ label response_name:
         $ player = "Sinner"
         e "Um... You didn't say anything."
     e "Okay, I'll call you [player] from now on."
+    return
 
 label response_thanks:
     e "[youre_welcome_quip]"
