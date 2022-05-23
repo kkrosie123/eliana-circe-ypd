@@ -155,5 +155,5 @@ label response_name:
     e "Okay, I'll call you [player] from now on."
 
 label response_thanks:
-    [youre_welcome_quip]
+    e "[youre_welcome_quip]"
     return
