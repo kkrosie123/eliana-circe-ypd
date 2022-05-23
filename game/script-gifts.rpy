@@ -6,6 +6,10 @@ init python:
         _("the bible"),
         _("the holy bible")
     ]
+    gifts_cross = [
+        _("cross"),
+        _("crucifix")
+    ]
     gifts_goat = [
         _("dead goat"),
         _("goat"),
