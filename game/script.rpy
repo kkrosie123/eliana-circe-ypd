@@ -23,3 +23,12 @@ define s = Character("Satan", color="#500000")
 
 #default persistent values
 default player = "Sinner"
+#pronouns
+default he = "they"
+default he_is = "they are"
+default him = "them"
+default his = "theirs"
+default boy = "person"
+default guy = "person"
+default man = "person"
+

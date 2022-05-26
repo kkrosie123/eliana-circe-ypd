@@ -2,6 +2,7 @@
 init python:
     import random
     random_chatter_list = [
+        _("random_chatter_gender"),
         _("random_chatter_rare_entry"),
         _("random_chatter_sacrifices"),
         _("random_chatter_seven_sins")
@@ -22,6 +23,60 @@ label random_chatter_rare_entry:
     return
 
 #random chatter
+label random_chatter_gender:
+    if not renpy.seen_label("random_chatter_gender_unseen"):
+        call random_chatter_gender_unseen
+    else:
+        call random_chatter_gender_seen
+    return
+
+label random_chatter_gender_seen:
+    e "I've definitely learned a lot more about genders since we last talked about them."
+    e "Did you know that they can change?"
+    e "They're like self-expression! That's so cool to me!"
+    e "Say, has your gender changed since we last talked about it?"
+    menu:
+        "Yes.":
+            e "Oh, okay! In that case, what are your pronouns?"
+            menu:
+                "He/Him.":
+                    call pronouns_he
+                "She/Her.":
+                    call pronouns_she
+                "They/Them.":
+                    call pronouns_they
+                "Something else.":
+                    e "Is that so?"
+                    e "Would you tell me your pronouns?"
+                    call pronouns_custom
+        "No.":
+            e "Oh, okay!"
+    e "If you ever want to change what pronouns I call you, just tell me!"
+    return
+
+label random_chatter_gender_unseen:
+    e "You know, in hell, humans lose all of their distinguishing features."
+    e "As a result, I'm pretty new to the whole gender thing..."
+    e "I understand it's a complicated topic, but I want to refer to you properly."
+    e "So, [sinner]... What are your pronouns?"
+    menu:
+        "He/Him.":
+            call pronouns_he
+            e "Alright!"
+        "She/Her.":
+            call pronouns_she
+            e "Alright!"
+        "They/Them.":
+            call pronouns_they
+            e "Alright!"
+        "Something else.":
+            e "Is that so?"
+            e "Huh, this gender thing seems to have a lot more to it than I thought!"
+            e "Would you tell me your pronouns?"
+            call pronouns_custom
+    e "If you ever want to change what pronouns I call you, just tell me!"
+    return
+
 label random_chatter_sacrifices:
     e "Hey, [player]?"
     e "Have you ever heard of demonic sacrifices?"
