@@ -58,7 +58,7 @@ label random_chatter_gender_unseen:
     e "You know, in hell, humans lose all of their distinguishing features."
     e "As a result, I'm pretty new to the whole gender thing..."
     e "I understand it's a complicated topic, but I want to refer to you properly."
-    e "So, [sinner]... What are your pronouns?"
+    e "So, [player]... What are your pronouns?"
     menu:
         "He/Him.":
             call pronouns_he
