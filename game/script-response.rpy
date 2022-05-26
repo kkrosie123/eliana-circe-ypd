@@ -26,6 +26,8 @@ label input_response:
         call response_love
     elif player_input in list_name:
         call response_name
+    elif player_input in list_pronouns:
+        call random_chatter_gender
     elif player_input in list_thanks:
         call response_thanks
     else:

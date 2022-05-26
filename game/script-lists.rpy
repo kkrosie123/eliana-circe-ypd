@@ -134,6 +134,21 @@ init python:
         _("stop calling me a sinner"),
         _("stop calling me sinner")
     ]
+    list_pronouns = [
+        _("change my gender"),
+        _("change my pronouns"),
+        _("gender"),
+        _("gender identity"),
+        _("i changed my gender"),
+        _("i changed my pronouns"),
+        _("i'm not a boy"),
+        _("i'm not a girl"),
+        _("my gender"),
+        _("my gender changed"),
+        _("my pronouns"),
+        _("my pronouns changed"),
+        _("pronouns")
+    ]
     list_thanks = [
         _("thanks"),
         _("thanks bunches"),
