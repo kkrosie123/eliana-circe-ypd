@@ -5,6 +5,7 @@ init python:
         _("random_chatter_gender"),
         _("random_chatter_rare_entry"),
         _("random_chatter_sacrifices"),
+        _("random_chatter_seasons"),
         _("random_chatter_seven_sins")
     ]
     random_chatter = random.choice(random_chatter_list)
@@ -98,7 +99,14 @@ label random_chatter_sacrifices:
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "Like you..."
     return
-
+    
+label random_chatter_seasons:
+    e "The seasons in this world are quite beautiful."
+    e "Sure, the different circles of hell have different climates, you could say, but things don't change much."
+    e "The cycle of the year provides so many experiences and sensations I've never had before."
+    e "Perhaps I'll follow you the next time you go for a walk, so I can really take it all in."
+    e "Ehehe, don't worry. I'll keep out of sight of other mortals."
+    return
 
 label random_chatter_seven_sins:
     e "Hmm..."
@@ -127,12 +135,4 @@ label rare_chatter_dating_games:
     e "Why do people play dating games?"
     e "Shouldn't they just go out and, I don't know, get a real girlfriend?"
     e "Ehehe."
-    return
-
-label rare_chatter_seasons:
-    e "The seasons in this world are quite beautiful."
-    e "Sure, the different circles of hell have different climates, you could say, but things don't change much."
-    e "The cycle of the year provides so many experiences and sensations I've never had before."
-    e "Perhaps I'll follow you the next time you go for a walk, so I can really take it all in."
-    e "Ehehe, don't worry. I'll keep out of sight of other mortals."
     return
