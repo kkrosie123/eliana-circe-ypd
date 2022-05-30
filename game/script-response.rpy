@@ -36,7 +36,7 @@ label input_response:
 
 #labels start here
 label no_response:
-    show idle_04
+    show eliana idle_04
     e "[no_response_quip]"
     e "[no_response_apology_quip]"
     return
