@@ -46,8 +46,10 @@ label start:
 
 #angry and sinner affection greetings (upset)
 label greeting_upset_itsyou:
+    show eliana angry_idle_03
     e "Oh... It's you."
     e "I didn't think you'd be back."
+    show eliana angry_idle_04
     e "Whatever, you're here now."
     return
 
@@ -83,22 +85,27 @@ label greeting_happy_song_meet_again:
 #greetings should include those from the previous tier, these are just unlocked at high affection
     
 label greeting_adoration_song_sunshine:
+    show eliana high_aff_idle_blink_00
     e "~You are my sunshine~"
     e "~My only sunshine~"
     e "~You make me happy~"
     e "~When skies are gray~"
+    show eliana high_aff_idle_blink_01
     e "~You'll never know, Dear~"
     e "~How much I love you~"
+    show high_aff_idle_blink_02
     e "~Please don't take my sunshine away~"
     e "..."
+    show high_aff_idle_02
     e "Where is my sunshine?"
     e "There's my sunshine, ehehe~!"
+    show high_aff_idle_01
     e "Hello again, my love."
     return
 
 #the actual intro for the game
 label introduction:
-    show room_mess_03
+    show room mess_03
     "..."
     "It's a normal day."
     "..."
