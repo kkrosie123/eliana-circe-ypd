@@ -55,6 +55,7 @@ label greeting_upset_itsyou:
 
 #normal and low affection greetings (normal)
 label greeting_normal_quips:
+    show eliana neutral_00
     e "[greeting_quip]"
     e "[greeting_follow_up_quip]"
     return
