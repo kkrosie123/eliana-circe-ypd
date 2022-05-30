@@ -32,9 +32,9 @@ label random_chatter_gender:
     return
 
 label random_chatter_gender_seen:
-    show eliana nuetral_02
+    show eliana neutral_02
     e "I've definitely learned a lot more about genders since we last talked about them."
-    show eliana nuetral_00
+    show eliana neutral_00
     e "Did you know that they can change?"
     show eliana joyful_07
     e "They're like self-expression! That's so cool to me!"
