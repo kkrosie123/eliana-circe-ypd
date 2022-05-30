@@ -136,7 +136,7 @@ label quip_no_response_apology:
 #she fully has no response lol
 label quip_no_response_full:
     call quip_no_response
-    call quip_no_response_apology
+    call quip_no_response_full
     return
 
 #thank u
