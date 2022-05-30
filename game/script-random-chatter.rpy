@@ -5,6 +5,7 @@ init python:
         _("random_chatter_gender"),
         _("random_chatter_rare_entry"),
         _("random_chatter_sacrifices"),
+        _("random_chatter_seasons"),
         _("random_chatter_seven_sins")
     ]
     random_chatter = random.choice(random_chatter_list)
@@ -120,7 +121,34 @@ label random_chatter_sacrifices:
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "Like you..."
     return
-
+    
+label random_chatter_seasons:
+    show eliana high_aff_idle_blink_03
+    e "You know, [player]..."
+    show eliana high aff_idle_blink_02
+    e "The seasons in this world are quite beautiful."
+    show eliana low_aff_idle_04
+    e "Sure, the different circles of hell have different climates, you could say, but things don't change much."
+    show eliana idle_03
+    e "The cycle of the year provides so many experiences and sensations I've never had before."
+    show eliana high_aff_idle_blink_03
+    e "Spring is full of rain and the scent of flowers."
+    e "Summer is hot like hell, but in a different way, I guess."
+    e "Nothing is on fire, nothing smells of ash or rotting flesh..."
+    show eliana high_aff_idle_blink_02
+    e "It's all so bright and... sunshiney?"
+    e "The sun is so new to me, as well."
+    e "Everything is so dark where I'm from."
+    show eliana enamored_idle_blink_03
+    e "In autumn, things become the perfect temperature."
+    e "Literally perfect. I've never felt so comfortable."
+    e "In winter, I get to bundle up..."
+    show eliana enamored_idle_blink_04
+    e "Oh Satan. It's all so new."
+    show eliana idle_01
+    e "Perhaps I'll follow you the next time you go for a walk, so I can really take it all in."
+    e "Ehehe, don't worry. I'll keep out of sight of other mortals."
+    return
 
 label random_chatter_seven_sins:
     show eliana idle_00
