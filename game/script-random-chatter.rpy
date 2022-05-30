@@ -31,12 +31,17 @@ label random_chatter_gender:
     return
 
 label random_chatter_gender_seen:
+    show eliana nuetral_02
     e "I've definitely learned a lot more about genders since we last talked about them."
+    show eliana nuetral_00
     e "Did you know that they can change?"
+    show eliana joyful_07
     e "They're like self-expression! That's so cool to me!"
+    show eliana idle_04
     e "Say, has your gender changed since we last talked about it?"
     menu:
         "Yes.":
+            show eliana idle_blink_00
             e "Oh, okay! In that case, what are your pronouns?"
             menu:
                 "He/Him.":
@@ -50,13 +55,17 @@ label random_chatter_gender_seen:
                     e "Would you tell me your pronouns?"
                     call pronouns_custom
         "No.":
+            show eliana idle_blink_00
             e "Oh, okay!"
+    show eliana idle_04
     e "If you ever want to change what pronouns I call you, just tell me!"
     return
 
 label random_chatter_gender_unseen:
+    show eliana idle_03
     e "You know, in hell, humans lose all of their distinguishing features."
     e "As a result, I'm pretty new to the whole gender thing..."
+    show eliana idle_02
     e "I understand it's a complicated topic, but I want to refer to you properly."
     e "So, [player]... What are your pronouns?"
     menu:
@@ -71,6 +80,7 @@ label random_chatter_gender_unseen:
             e "Alright!"
         "Something else.":
             e "Is that so?"
+            show eliana idle_blink_00
             e "Huh, this gender thing seems to have a lot more to it than I thought!"
             e "Would you tell me your pronouns?"
             call pronouns_custom
@@ -78,22 +88,33 @@ label random_chatter_gender_unseen:
     return
 
 label random_chatter_sacrifices:
+    show eliana angry_idle_blink_04
     e "Hey, [player]?"
+    show eliana angry_idle_04
     e "Have you ever heard of demonic sacrifices?"
+    show eliana embarrassed_01
     e "Why do people do that garbage???"
+    show eliana angry_00
     e "The last thing we need is another dead goat!"
+    show eliana angry_idle_00
     e "What am I supposed to do with all of these animals??"
     e "Like, we don't eat them or anything..."
+    show eliana angry_idle_02
     e "Just another soul we have to deal with."
     e "Hell is only so big, you know?"
+    show eliana embarrassed_02
     e "Please, PLEASE don't send me anything like that."
     e "If you're gonna sacrifice anything, how about something I can actually, I dunno, use?"
+    show eliana high_aff_idle_blink_01
     e "Like a soft plushie..."
     e "..."
+    show eliana low_aff_idle_01
     e "We don't get many nice things in hell."
     e "All of the sinners."
     e "You know, pieces of crap type people."
+    show eliana low_aff_idle_02
     e "I'm lucky enough that I get to come to Earth."
+    show high_aff_idle_blink_02
     e "There is some good here."
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "Like you..."

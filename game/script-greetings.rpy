@@ -60,24 +60,32 @@ label greeting_normal_quips:
     return
 
 label greeting_normal_unexpected:
+    show eliana idle_blink_00
     e "..."
+    show eliana idle_blink_01
     e "..."
+    show eliana idle_01
     e "!!!"
+    show eliana neutral_01
     e "Hey, sorry, I didn't expect you back so soon!"
     e "[greeting_follow_up_quip]"
     return
 
 #high and love affection greetings (happy)
 label greeting_happy_itsyou:
+    show eliana high_aff_idle_02
     e "Hmm?"
+    show eliana high_aff_idle_blink_04
     e "Well would you look at that, it's you~"
     return
 
 label greeting_happy_song_meet_again:
+    show eliana high_aff_idle_blink_02
     e "~We'll meet again~"
     e "~Don't know where~"
     e "~Don't know when~"
     e "~Oh, I know we'll meet again some sunny day~"
+    show eliana high_aff_idle_blink_04
     e "Ehehe~ Hello there, Darling~"
     return
 
