@@ -37,7 +37,9 @@ label input_response:
 #labels start here
 label no_response:
     show eliana idle_04
+    $ no_response_quip = random.choice(no_response_quips)
     e "[no_response_quip]"
+    $ no_response_apology_quip = random.choice(no_response_apology_quips)
     e "[no_response_apology_quip]"
     return
 
@@ -50,6 +52,7 @@ label response_compliments_beautiful:
         e "Ehehe!"
     else:
         show idle_03
+        $ thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
         e "[thanks_reluctant_quip]"
     $ affection_value += 1
     return
@@ -62,6 +65,7 @@ label response_compliments_caring:
         e "You make me feel very loved and cared for~"
     else:
         show idle_03
+        $ thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
         e "[thanks_reluctant_quip]"
     $ affection_value += 1
     return
@@ -78,6 +82,7 @@ label response_compliments_kind:
         show idle_blink_01
         e "But perhaps I want you all to myself!"
     else:
+        $ thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
         e "[thanks_reluctant_quip]"
     $ affection_value += 1
     return
@@ -93,6 +98,7 @@ label response_emotes_good:
     return
 
 label response_flip_coin:
+    $ flip_coin_quip = random.choice(flip_coin_quips)
     show eliana idle_blink_01
     e "Alright, I'll flip a coin for you."
     show eliana joyful_00
@@ -174,6 +180,7 @@ label response_insults_very_bad:
 label response_love:
     if affection_eliana == "love" or affection_eliana == "enamored":
         show eliana high_aff_idle_01
+        $ love_quip = random.choice(love_quips)
         e "[love_quip]"
     else: 
         show eliana embarrassed_00
@@ -199,5 +206,6 @@ label response_name:
 
 label response_thanks:
     show eliana high_aff_idle_03
+    $ youre_welcome_quip = random.choice(youre_welcome_quips)
     e "[youre_welcome_quip]"
     return
