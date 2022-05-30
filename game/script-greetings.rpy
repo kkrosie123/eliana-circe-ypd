@@ -30,52 +30,63 @@ label start:
         call introduction
     else:
         if affection_eliana == "sinner" or affection_eliana == "angry":
-            show room_mess_03
+            show room mess_03
             show filter_type red
             call expression greeting_upset
         elif affection_eliana == "low" or affection_eliana == "normal":
-            show room_mess_03
+            show room mess_03
             call expression greeting_normal
         elif affection_eliana == "high" or affection_eliana == "love":
-            show room_mess_02
+            show room mess_02
             call expression greeting_happy
         elif affection_eliana == "enamored":
-            show room_mess_01
+            show room mess_01
             call expression greeting_adoration
     jump loops
 
 #angry and sinner affection greetings (upset)
 label greeting_upset_itsyou:
+    show eliana angry_idle_03
     e "Oh... It's you."
     e "I didn't think you'd be back."
+    show eliana angry_idle_04
     e "Whatever, you're here now."
     return
 
 #normal and low affection greetings (normal)
 label greeting_normal_quips:
+    show eliana neutral_00
     e "[greeting_quip]"
     e "[greeting_follow_up_quip]"
     return
 
 label greeting_normal_unexpected:
+    show eliana idle_blink_00
     e "..."
+    show eliana idle_blink_01
     e "..."
+    show eliana idle_01
     e "!!!"
+    show eliana neutral_01
     e "Hey, sorry, I didn't expect you back so soon!"
     e "[greeting_follow_up_quip]"
     return
 
 #high and love affection greetings (happy)
 label greeting_happy_itsyou:
+    show eliana high_aff_idle_02
     e "Hmm?"
+    show eliana high_aff_idle_blink_04
     e "Well would you look at that, it's you~"
     return
 
 label greeting_happy_song_meet_again:
+    show eliana high_aff_idle_blink_02
     e "~We'll meet again~"
     e "~Don't know where~"
     e "~Don't know when~"
     e "~Oh, I know we'll meet again some sunny day~"
+    show eliana high_aff_idle_blink_04
     e "Ehehe~ Hello there, Darling~"
     return
 
@@ -83,22 +94,27 @@ label greeting_happy_song_meet_again:
 #greetings should include those from the previous tier, these are just unlocked at high affection
     
 label greeting_adoration_song_sunshine:
+    show eliana high_aff_idle_blink_00
     e "~You are my sunshine~"
     e "~My only sunshine~"
     e "~You make me happy~"
     e "~When skies are gray~"
+    show eliana high_aff_idle_blink_01
     e "~You'll never know, Dear~"
     e "~How much I love you~"
+    show high_aff_idle_blink_02
     e "~Please don't take my sunshine away~"
     e "..."
+    show high_aff_idle_02
     e "Where is my sunshine?"
     e "There's my sunshine, ehehe~!"
+    show high_aff_idle_01
     e "Hello again, my love."
     return
 
 #the actual intro for the game
 label introduction:
-    show room_mess_03
+    show room mess_03
     "..."
     "It's a normal day."
     "..."
