@@ -115,7 +115,7 @@ label random_chatter_sacrifices:
     e "You know, pieces of crap type people."
     show eliana low_aff_idle_02
     e "I'm lucky enough that I get to come to Earth."
-    show high_aff_idle_blink_02
+    show eliana high_aff_idle_blink_02
     e "There is some good here."
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "Like you..."
