@@ -125,7 +125,7 @@ label random_chatter_sacrifices:
 label random_chatter_seasons:
     show eliana high_aff_idle_blink_03
     e "You know, [player]..."
-    show eliana high aff_idle_blink_02
+    show eliana high_aff_idle_blink_02
     e "The seasons in this world are quite beautiful."
     show eliana low_aff_idle_04
     e "Sure, the different circles of hell have different climates, you could say, but things don't change much."
