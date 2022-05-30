@@ -37,10 +37,7 @@ label input_response:
 #labels start here
 label no_response:
     show eliana idle_04
-    $ no_response_quip = random.choice(no_response_quips)
-    e "[no_response_quip]"
-    $ no_response_apology_quip = random.choice(no_response_apology_quips)
-    e "[no_response_apology_quip]"
+    call quip_no_response_full
     return
 
 label response_compliments_beautiful:
@@ -52,8 +49,7 @@ label response_compliments_beautiful:
         e "Ehehe!"
     else:
         show idle_03
-        $ thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
-        e "[thanks_reluctant_quip]"
+        call quip_thanks_reluctant
     $ affection_value += 1
     return
 
@@ -65,8 +61,7 @@ label response_compliments_caring:
         e "You make me feel very loved and cared for~"
     else:
         show idle_03
-        $ thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
-        e "[thanks_reluctant_quip]"
+        call quip_thanks_reluctant
     $ affection_value += 1
     return
 
@@ -82,8 +77,7 @@ label response_compliments_kind:
         show idle_blink_01
         e "But perhaps I want you all to myself!"
     else:
-        $ thanks_reluctant_quip = random.choice(thanks_reluctant_quips)
-        e "[thanks_reluctant_quip]"
+        call quip_thanks_reluctant
     $ affection_value += 1
     return
 
@@ -98,29 +92,24 @@ label response_emotes_good:
     return
 
 label response_flip_coin:
-    $ flip_coin_quip = random.choice(flip_coin_quips)
     show eliana idle_blink_01
     e "Alright, I'll flip a coin for you."
     show eliana joyful_00
-    e "It landed on [flip_coin_quip]!"
+    call quip_flip_coin
     return
 
 label response_greetings:
     show eliana idle_blink_02
-    $ greeting_quip = random.choice(greeting_quips)
-    e "[greeting_quip]"
+    call quip_greeting
     show eliana idle_blink_01
-    $ greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
-    e "[greeting_follow_up_quip]"
+    call quip_greeting_follow_up
     return
 
 label response_howareyou:
     show eliana joyful_00
-    $ howareyou_quip = random.choice(howareyou_quips)
-    e "[howareyou_quip]"
+    call quip_howareyou
     show eliana idle_blink_04
-    $ greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
-    e "[greeting_follow_up_quip]"
+    call quip_greeting_follow_up
     return
 
 label response_hugs:
@@ -180,8 +169,7 @@ label response_insults_very_bad:
 label response_love:
     if affection_eliana == "love" or affection_eliana == "enamored":
         show eliana high_aff_idle_01
-        $ love_quip = random.choice(love_quips)
-        e "[love_quip]"
+        call quip_love
     else: 
         show eliana embarrassed_00
         e "Um..."
@@ -191,8 +179,7 @@ label response_love:
 
 label response_name:
     show eliana high_aff_idle_02
-    if renpy.seen_label("response_name"):
-        e "Oh? You want to change your name?"
+    e "Oh? You want to change your name?"
     $ player = renpy.input("What should I call you?")
     $ player = player.strip()
     $ player = player.capitalize()
@@ -206,6 +193,5 @@ label response_name:
 
 label response_thanks:
     show eliana high_aff_idle_03
-    $ youre_welcome_quip = random.choice(youre_welcome_quips)
-    e "[youre_welcome_quip]"
+    call quip_youre_welcome
     return
