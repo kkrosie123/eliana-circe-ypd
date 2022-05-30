@@ -30,17 +30,17 @@ label start:
         call introduction
     else:
         if affection_eliana == "sinner" or affection_eliana == "angry":
-            show room_mess_03
+            show room mess_03
             show filter_type red
             call expression greeting_upset
         elif affection_eliana == "low" or affection_eliana == "normal":
-            show room_mess_03
+            show room mess_03
             call expression greeting_normal
         elif affection_eliana == "high" or affection_eliana == "love":
-            show room_mess_02
+            show room mess_02
             call expression greeting_happy
         elif affection_eliana == "enamored":
-            show room_mess_01
+            show room mess_01
             call expression greeting_adoration
     jump loops
 
