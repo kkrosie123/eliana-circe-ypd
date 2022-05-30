@@ -101,15 +101,19 @@ label response_flip_coin:
 
 label response_greetings:
     show eliana idle_blink_02
+    $ greeting_quip = random.choice(greeting_quips)
     e "[greeting_quip]"
     show eliana idle_blink_01
+    $ greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
     e "[greeting_follow_up_quip]"
     return
 
 label response_howareyou:
     show eliana joyful_00
+    $ howareyou_quip = random.choice(howareyou_quips)
     e "[howareyou_quip]"
     show eliana idle_blink_04
+    $ greeting_follow_up_quip = random.choice(greeting_follow_up_quips)
     e "[greeting_follow_up_quip]"
     return
 
