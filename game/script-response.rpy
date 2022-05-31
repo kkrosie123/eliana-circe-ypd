@@ -28,6 +28,8 @@ label input_response:
         call response_name
     elif player_input in list_pronouns:
         call random_chatter_gender
+    elif player_input in list_succubus:
+        call response_succubus
     elif player_input in list_thanks:
         call response_thanks
     else:
@@ -189,6 +191,16 @@ label response_name:
         e "Um... You didn't say anything."
     show eliana idle_blink_03
     e "Okay, I'll call you [player] from now on."
+    return
+
+label response_succubus:
+    e "!!!"
+    e "WHAT ARE YOU, A PERVERT?"
+    e "... Oh wait."
+    e "Of course you are."
+    e "Thirsty sinner."
+    e "Geez. Don't call me that, okay?"
+    $ affection_value -= 10
     return
 
 label response_thanks:

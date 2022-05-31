@@ -1,8 +1,11 @@
 #lists of possible inputs, alphabetical order
 init python:
     list_compliments_beautiful = [
+        _("ur beautiful"),
         _("you're beautiful"),
+        _("ur gorgeous"),
         _("you're gorgeous"),
+        _("ur pretty"),
         _("you're pretty")
     ]
     list_compliments_caring = [
@@ -10,7 +13,9 @@ init python:
         _("you're caring")
     ]
     list_compliments_kind = [
+        _("ur kind"),
         _("you're kind"),
+        _("ur nice"),
         _("you're nice"),
         _("you're so kind"),
         _("you're so nice")
@@ -74,6 +79,7 @@ init python:
         _("i want a hug")
     ]
     list_insults_bad = [
+        _("jerk"),
         _("you're a liar"),
         _("you're dumb"),
         _("you're mean"),
@@ -148,6 +154,10 @@ init python:
         _("my pronouns"),
         _("my pronouns changed"),
         _("pronouns")
+    ]
+    list_succubus = [
+        _("are you a succubus"),
+        _("succubus")
     ]
     list_thanks = [
         _("thanks"),
