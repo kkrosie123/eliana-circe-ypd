@@ -12,9 +12,12 @@ init python:
     ]
     farewell_normal = random.choice(farewells_normal)
     farewells_happy = [
+        _("farewell_happy_leaving_already")
     ]
     farewell_happy = random.choice(farewells_happy)
     farewells_adoration = [
+        _("farewell_happy_leaving_already"),
+        _("farewell_adoration_dreams")
     ]
     farewell_adoration = random.choice(farewells_adoration)
 
@@ -47,5 +50,14 @@ label farewell_normal_see_you:
     return
 
 #happy
+label farewell_happy_leaving_already:
+    e "Aww, leaving already?"
+    e "Well, alright. I'll see you later!"
+    return
 
-#enamored
+#adoration
+label farewell_adoration_dreams:
+    e "Goodbye, my love."
+    e "I'll be dreaming about you~"
+    e "Until we meet again, darling."
+    return
