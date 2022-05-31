@@ -26,6 +26,7 @@ label button_games:
     jump loops
 
 label button_quit:
+    call farewell_entry
     $ renpy.save_persistent()
     $ renpy.quit()
 
