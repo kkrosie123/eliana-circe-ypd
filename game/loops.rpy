@@ -13,7 +13,7 @@ label loops:
     elif affection_eliana == "high":
         jump loop_idle_high_aff
     elif affection_eliana == "love":
-        jump loop_idle_love
+        jump loop_idle_high_aff
     elif affection_eliana == "enamored":
         jump loop_idle_enamored
 
@@ -46,7 +46,30 @@ label animation_idle_sinner:
 
 #angry
 label loop_idle_angry:
+    call animation_idle_angry
+    call animation_idle_angry
+    call animation_idle_angry
+    $ random_chatter = random.choice(random_chatter_list)
+    call expression random_chatter
     jump loops
+
+label animation_idle_angry:
+    call angry_aff_pose_00
+    call angry_aff_pose_00
+    call angry_aff_pose_00
+    call angry_aff_pose_01
+    call angry_aff_pose_01
+    call angry_aff_pose_01
+    call angry_aff_pose_02
+    call angry_aff_pose_02
+    call angry_aff_pose_02
+    call angry_aff_pose_03
+    call angry_aff_pose_03
+    call angry_aff_pose_03
+    call angry_aff_pose_04
+    call angry_aff_pose_04
+    call angry_aff_pose_04
+    return
 
 #low aff
 label loop_idle_low_aff:
@@ -135,9 +158,32 @@ label loop_idle_love:
 
 #enamored
 label loop_idle_enamored:
+    call animation_idle_enamored
+    call animation_idle_enamored
+    call animation_idle_enamored
+    $ random_chatter = random.choice(random_chatter_list)
+    call expression random_chatter
+    return
+
+label animation_idle_enamored:
+    call enamored_aff_pose_00
+    call enamored_aff_pose_00
+    call enamored_aff_pose_00
+    call enamored_aff_pose_01
+    call enamored_aff_pose_01
+    call enamored_aff_pose_01
+    call enamored_aff_pose_02
+    call enamored_aff_pose_02
+    call enamored_aff_pose_02
+    call enamored_aff_pose_03
+    call enamored_aff_pose_03
+    call enamored_aff_pose_03
+    call enamored_aff_pose_04
+    call enamored_aff_pose_04
+    call enamored_aff_pose_04
     jump loops
 
-#the animations themself:
+#the animations themselves:
 #sinner animations
 label sinner_pose_00:
     show eliana sinner_idle_00
@@ -175,6 +221,41 @@ label sinner_pose_04:
     return
 
 #angry animations
+label angry_aff_pose_00:
+    show eliana angry_idle_00
+    $ renpy.pause(5)
+    show eliana angry_idle_blink_00
+    $ renpy.pause(0.15)
+    return
+
+label angry_aff_pose_01:
+    show eliana angry_idle_01
+    $ renpy.pause(5)
+    show eliana angry_idle_blink_01
+    $ renpy.pause(0.15)
+    return
+
+label angry_aff_pose_02:
+    show eliana angry_idle_02
+    $ renpy.pause(5)
+    show eliana angry_idle_blink_02
+    $ renpy.pause(0.15)
+    return
+
+label angry_aff_pose_03:
+    show eliana angry_idle_03
+    $ renpy.pause(5)
+    show eliana angry_idle_blink_03
+    $ renpy.pause(0.15)
+    return
+
+label angry_aff_pose_04:
+    show eliana angry_idle_04
+    $ renpy.pause(5)
+    show eliana angry_idle_blink_04
+    $ renpy.pause(0.15)
+    return
+
 #low aff animations
 label low_aff_pose_00:
     show eliana low_aff_idle_00
@@ -280,5 +361,43 @@ label high_aff_pose_04:
     show eliana high_aff_idle_04
     $ renpy.pause(5)
     show eliana high_aff_idle_blink_04
+    $ renpy.pause(0.15)
+    return
+
+#love animations
+
+#enamored animations
+label enamored_aff_pose_00:
+    show eliana enamored_idle_00
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_00
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_01:
+    show eliana enamored_idle_01
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_01
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_02:
+    show eliana enamored_idle_02
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_02
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_03:
+    show eliana enamored_idle_03
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_03
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_04:
+    show eliana enamored_idle_04
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_04
     $ renpy.pause(0.15)
     return
