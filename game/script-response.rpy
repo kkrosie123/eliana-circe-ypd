@@ -191,7 +191,7 @@ label response_insults_very_bad:
     return
 
 label response_kill:
-    show eliana huh_03
+    show eliana huh_02
     e "Um..."
     show eliana angry_idle_01
     e "I mean... yes..."
@@ -250,7 +250,7 @@ label response_thanks:
     return
 
 label response_torture:
-    show eliana huh_03
+    show eliana huh_02
     e "Um..."
     e "It's my job..."
     show eliana low_aff_idle_01
