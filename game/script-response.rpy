@@ -22,6 +22,8 @@ label input_response:
         call response_insults_bad
     elif player_input in list_insults_very_bad:
         call response_insults_very_bad
+    elif player_input in list_kill:
+        call response_kill
     elif player_input in list_love:
         call response_love
     elif player_input in list_name:
@@ -168,6 +170,19 @@ label response_insults_very_bad:
     $ affection_value -= 20
     return
 
+label response_kill:
+    show eliana huh_03
+    e "Um..."
+    show eliana angry_idle_01
+    e "I mean... yes..."
+    show eliana low_aff_idle_01
+    e "Only when I'm really, really angry."
+    e "I don't like to kill."
+    show eliana low_aff_idle_blink_01
+    e "..."
+    e "Let's not talk about this, okay?"
+    return
+
 label response_love:
     if affection_eliana == "love" or affection_eliana == "enamored":
         show eliana high_aff_idle_01
@@ -194,11 +209,17 @@ label response_name:
     return
 
 label response_succubus:
+    show eliana embarrassed_04
     e "!!!"
+    show eliana embarrassed_01
     e "WHAT ARE YOU, A PERVERT?"
+    show eliana huh_01
     e "... Oh wait."
+    show eliana angry_02
     e "Of course you are."
+    show eliana angry_01
     e "Thirsty sinner."
+    show eliana angry_00
     e "Geez. Don't call me that, okay?"
     $ affection_value -= 10
     return
