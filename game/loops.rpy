@@ -154,10 +154,28 @@ label animation_idle_high_aff:
     
 #love
 label loop_idle_love:
+    call loop_idle_enamored
+    call loop_idle_enamored
+    call loop_idle_enamored
     jump loops
 
 #enamored
 label loop_idle_enamored:
+    call enamored_aff_pose_00
+    call enamored_aff_pose_00
+    call enamored_aff_pose_00
+    call enamored_aff_pose_01
+    call enamored_aff_pose_01
+    call enamored_aff_pose_01
+    call enamored_aff_pose_02
+    call enamored_aff_pose_02
+    call enamored_aff_pose_02
+    call enamored_aff_pose_03
+    call enamored_aff_pose_03
+    call enamored_aff_pose_03
+    call enamored_aff_pose_04
+    call enamored_aff_pose_04
+    call enamored_aff_pose_04
     jump loops
 
 #the animations themselves:
