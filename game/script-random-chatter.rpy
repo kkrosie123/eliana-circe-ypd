@@ -174,7 +174,7 @@ label random_chatter_seven_sins:
 
 #rare chatter
 label rare_chatter_dating_games:
-    show eliana nuetral_00
+    show eliana neutral_00
     e "Why do people play dating games?"
     e "Shouldn't they just go out and, I don't know, get a real girlfriend?"
     e "Ehehe."

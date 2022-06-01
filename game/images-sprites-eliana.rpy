@@ -58,7 +58,6 @@ image eliana high_aff_idle_blink_04 = "images/eliana/high_aff_idle_blink_04.png"
 image eliana huh_00 = "images/eliana/huh_00.png"
 image eliana huh_01 = "images/eliana/huh_01.png"
 image eliana huh_02 = "images/eliana/huh_02.png"
-image eliana huh_03 = "images/eliana/huh_03.png"
 #default affection idle animations
 image eliana idle_00 = "images/eliana/idle_00.png"
 image eliana idle_01 = "images/eliana/idle_01.png"
