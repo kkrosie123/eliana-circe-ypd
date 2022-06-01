@@ -1,5 +1,10 @@
 #lists of possible inputs, alphabetical order
 init python:
+    list_age = [
+        _("how old are you"),
+        _("what is your age"),
+        _("what's your age")
+    ]
     list_compliments_beautiful = [
         _("ur beautiful"),
         _("you're beautiful"),
