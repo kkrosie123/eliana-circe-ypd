@@ -3,6 +3,7 @@ init python:
     import random
     random_chatter_list = [
         _("random_chatter_gender"),
+        _("random_chatter_have_you_eaten"),
         _("random_chatter_rare_entry"),
         _("random_chatter_sacrifices"),
         _("random_chatter_seasons"),
