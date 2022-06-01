@@ -89,6 +89,28 @@ label random_chatter_gender_unseen:
     e "If you ever want to change what pronouns I call you, just tell me!"
     return
 
+label random_chatter_have_you_eaten:
+    e "Hey, [player]?"
+    menu:
+        e "Have you eaten today?"
+        "Yes.":
+            e "Good!"
+        "No.":
+            e "!!!"
+            e "Are you serious?"
+            e "I don't want to have to see you in hell any sooner than I need to!"
+        e "It's really important that you take care of yourself."
+        e "Even demons have to eat to survive."
+        e "Albeit, it's different from the way you humans eat."
+        e "But I know how important it is, including for you!"
+        e "Take care of yourself!"
+        menu:
+            e "Got it?"
+            "Got it.":
+                e "Ehehe!"
+        e "Good. I knew I could count on you."
+    return
+
 label random_chatter_sacrifices:
     show eliana angry_idle_blink_04
     e "Hey, [player]?"
