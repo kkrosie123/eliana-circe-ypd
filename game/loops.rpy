@@ -340,3 +340,41 @@ label high_aff_pose_04:
     show eliana high_aff_idle_blink_04
     $ renpy.pause(0.15)
     return
+
+#love animations
+
+#enamored animations
+label enamored_aff_pose_00:
+    show eliana enamored_idle_00
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_00
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_01:
+    show eliana enamored_idle_01
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_01
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_02:
+    show eliana enamored_idle_02
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_02
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_03:
+    show eliana enamored_idle_03
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_03
+    $ renpy.pause(0.15)
+    return
+
+label enamored_aff_pose_04:
+    show eliana enamored_idle_04
+    $ renpy.pause(5)
+    show eliana enamored_idle_blink_04
+    $ renpy.pause(0.15)
+    return
