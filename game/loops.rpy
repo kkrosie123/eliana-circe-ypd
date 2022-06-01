@@ -154,13 +154,18 @@ label animation_idle_high_aff:
     
 #love
 label loop_idle_love:
-    call loop_idle_enamored
-    call loop_idle_enamored
-    call loop_idle_enamored
     jump loops
 
 #enamored
 label loop_idle_enamored:
+    call animation_idle_enamored
+    call animation_idle_enamored
+    call animation_idle_enamored
+    $ random_chatter = random.choice(random_chatter_list)
+    call expression random_chatter
+    return
+
+label animation_idle_enamored:
     call enamored_aff_pose_00
     call enamored_aff_pose_00
     call enamored_aff_pose_00
