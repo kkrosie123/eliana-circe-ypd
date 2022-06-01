@@ -34,6 +34,8 @@ label input_response:
         call response_succubus
     elif player_input in list_thanks:
         call response_thanks
+    elif player_input in list_torture:
+        call response_torture
     else:
         call no_response
     jump loops
@@ -227,4 +229,20 @@ label response_succubus:
 label response_thanks:
     show eliana high_aff_idle_03
     call quip_youre_welcome
+    return
+
+label response_torture:
+    show eliana huh_03
+    e "Um..."
+    e "It's my job..."
+    show eliana low_aff_idle_01
+    e "I don't really enjoy it, but..."
+    e "Gotta earn the hell-equivalent of a paycheck."
+    if affection_eliana == sinner or affection_eliana == angry:
+        show eliana angry_01
+        e "I'd much rather be tormenting other souls than be hanging out with you."
+        e "Jerk."
+    else:
+        show eliana idle_blink_04
+        e "Believe me, I much prefer just hanging out with you."
     return

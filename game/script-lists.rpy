@@ -116,6 +116,14 @@ init python:
         _("you're the worst"),
         _("you're literally the worst")
     ]
+    list_kill = [
+        _("have you ever killed"),
+        _("have you ever killed somebody"),
+        _("have you ever killed someone"),
+        _("have you killed"),
+        _("have you killed somebody"),
+        _("have you killed someone")
+    ]
     list_love = [
         _("i love you"),
         _("i love you a lot"),
@@ -168,4 +176,11 @@ init python:
         _("ty"),
         _("tysm"),
         _("tyvm")
+    ]
+    list_torture = [
+        _("have you ever tormented someone"),
+        _("have you ever tortured somebody"),
+        _("have you ever tortured someone"),
+        _("how many people have you tortured"),
+        _("who else have you tormented")
     ]
