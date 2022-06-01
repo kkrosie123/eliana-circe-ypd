@@ -1,6 +1,8 @@
 #this is where eliana calls a response to the player
 label input_response:
-    if player_input in list_compliments_beautiful:
+    if player_input in list_age:
+        call response_age
+    elif player_input in list_compliments_beautiful:
         call response_compliments_beautiful
     elif player_input in list_compliments_caring:
         call response_compliments_caring
@@ -44,6 +46,22 @@ label input_response:
 label no_response:
     show eliana idle_04
     call quip_no_response_full
+    return
+
+label response_age:
+    show eliana huh_01
+    e "My age?"
+    show eliana high_aff_idle_blink_04
+    if affection_eliana == "high" or affection_eliana == "love" or affection_eliana == "enamored":
+        e "Alright, I'll tell you."
+        e "I'm 1900 years old. Still pretty young."
+        show eliana high_aff_idle_blink_01
+        e "Er, I guess that's a bit ancient in human years."
+        e "I'm sure you don't mind though."
+    else:
+        e "Ehehe, isn't it rude to ask a girl her age?"
+        show eliana high_aff_idle_blink_03
+        e "Maybe I'll tell you sometime later. You'll just have to wait and see."
     return
 
 label response_compliments_beautiful:
