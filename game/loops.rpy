@@ -13,7 +13,7 @@ label loops:
     elif affection_eliana == "high":
         jump loop_idle_high_aff
     elif affection_eliana == "love":
-        jump loop_idle_love
+        jump loop_idle_high_aff
     elif affection_eliana == "enamored":
         jump loop_idle_enamored
 
