@@ -1,8 +1,11 @@
 #lists of possible inputs, alphabetical order
 init python:
     list_compliments_beautiful = [
+        _("ur beautiful"),
         _("you're beautiful"),
+        _("ur gorgeous"),
         _("you're gorgeous"),
+        _("ur pretty"),
         _("you're pretty")
     ]
     list_compliments_caring = [
@@ -10,7 +13,9 @@ init python:
         _("you're caring")
     ]
     list_compliments_kind = [
+        _("ur kind"),
         _("you're kind"),
+        _("ur nice"),
         _("you're nice"),
         _("you're so kind"),
         _("you're so nice")
@@ -74,6 +79,7 @@ init python:
         _("i want a hug")
     ]
     list_insults_bad = [
+        _("jerk"),
         _("you're a liar"),
         _("you're dumb"),
         _("you're mean"),
@@ -109,6 +115,14 @@ init python:
         _("you're retarded"),
         _("you're the worst"),
         _("you're literally the worst")
+    ]
+    list_kill = [
+        _("have you ever killed"),
+        _("have you ever killed somebody"),
+        _("have you ever killed someone"),
+        _("have you killed"),
+        _("have you killed somebody"),
+        _("have you killed someone")
     ]
     list_love = [
         _("i love you"),
@@ -149,6 +163,10 @@ init python:
         _("my pronouns changed"),
         _("pronouns")
     ]
+    list_succubus = [
+        _("are you a succubus"),
+        _("succubus")
+    ]
     list_thanks = [
         _("thanks"),
         _("thanks bunches"),
@@ -158,4 +176,11 @@ init python:
         _("ty"),
         _("tysm"),
         _("tyvm")
+    ]
+    list_torture = [
+        _("have you ever tormented someone"),
+        _("have you ever tortured somebody"),
+        _("have you ever tortured someone"),
+        _("how many people have you tortured"),
+        _("who else have you tormented")
     ]

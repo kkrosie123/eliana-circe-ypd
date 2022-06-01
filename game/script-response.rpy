@@ -1,6 +1,8 @@
 #this is where eliana calls a response to the player
 label input_response:
-    if player_input in list_compliments_beautiful:
+    if player_input in list_age:
+        call response_age
+    elif player_input in list_compliments_beautiful:
         call response_compliments_beautiful
     elif player_input in list_compliments_caring:
         call response_compliments_caring
@@ -22,14 +24,20 @@ label input_response:
         call response_insults_bad
     elif player_input in list_insults_very_bad:
         call response_insults_very_bad
+    elif player_input in list_kill:
+        call response_kill
     elif player_input in list_love:
         call response_love
     elif player_input in list_name:
         call response_name
     elif player_input in list_pronouns:
         call random_chatter_gender
+    elif player_input in list_succubus:
+        call response_succubus
     elif player_input in list_thanks:
         call response_thanks
+    elif player_input in list_torture:
+        call response_torture
     else:
         call no_response
     jump loops
@@ -38,6 +46,22 @@ label input_response:
 label no_response:
     show eliana idle_04
     call quip_no_response_full
+    return
+
+label response_age:
+    show eliana huh_01
+    e "My age?"
+    show eliana high_aff_idle_blink_04
+    if affection_eliana == "high" or affection_eliana == "love" or affection_eliana == "enamored":
+        e "Alright, I'll tell you."
+        e "I'm 1900 years old. Still pretty young."
+        show eliana high_aff_idle_blink_01
+        e "Er, I guess that's a bit ancient in human years."
+        e "I'm sure you don't mind though."
+    else:
+        e "Ehehe, isn't it rude to ask a girl her age?"
+        show eliana high_aff_idle_blink_03
+        e "Maybe I'll tell you sometime later. You'll just have to wait and see."
     return
 
 label response_compliments_beautiful:
@@ -166,6 +190,19 @@ label response_insults_very_bad:
     $ affection_value -= 20
     return
 
+label response_kill:
+    show eliana huh_03
+    e "Um..."
+    show eliana angry_idle_01
+    e "I mean... yes..."
+    show eliana low_aff_idle_01
+    e "Only when I'm really, really angry."
+    e "I don't like to kill."
+    show eliana low_aff_idle_blink_01
+    e "..."
+    e "Let's not talk about this, okay?"
+    return
+
 label response_love:
     if affection_eliana == "love" or affection_eliana == "enamored":
         show eliana high_aff_idle_01
@@ -191,7 +228,39 @@ label response_name:
     e "Okay, I'll call you [player] from now on."
     return
 
+label response_succubus:
+    show eliana embarrassed_04
+    e "!!!"
+    show eliana embarrassed_01
+    e "WHAT ARE YOU, A PERVERT?"
+    show eliana huh_01
+    e "... Oh wait."
+    show eliana angry_02
+    e "Of course you are."
+    show eliana angry_01
+    e "Thirsty sinner."
+    show eliana angry_00
+    e "Geez. Don't call me that, okay?"
+    $ affection_value -= 10
+    return
+
 label response_thanks:
     show eliana high_aff_idle_03
     call quip_youre_welcome
+    return
+
+label response_torture:
+    show eliana huh_03
+    e "Um..."
+    e "It's my job..."
+    show eliana low_aff_idle_01
+    e "I don't really enjoy it, but..."
+    e "Gotta earn the hell-equivalent of a paycheck."
+    if affection_eliana == sinner or affection_eliana == angry:
+        show eliana angry_01
+        e "I'd much rather be tormenting other souls than be hanging out with you."
+        e "Jerk."
+    else:
+        show eliana idle_blink_04
+        e "Believe me, I much prefer just hanging out with you."
     return
