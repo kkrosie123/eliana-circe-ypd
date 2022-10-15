@@ -3,6 +3,7 @@ init python:
     import random
     random_chatter_list = [
         _("random_chatter_gender"),
+        _("random_chatter_have_you_eaten"),
         _("random_chatter_rare_entry"),
         _("random_chatter_sacrifices"),
         _("random_chatter_seasons"),
@@ -87,6 +88,28 @@ label random_chatter_gender_unseen:
             e "Would you tell me your pronouns?"
             call pronouns_custom
     e "If you ever want to change what pronouns I call you, just tell me!"
+    return
+
+label random_chatter_have_you_eaten:
+    e "Hey, [player]?"
+    menu:
+        e "Have you eaten today?"
+        "Yes.":
+            e "Good!"
+        "No.":
+            e "!!!"
+            e "Are you serious?"
+            e "I don't want to have to see you in hell any sooner than I need to!"
+    e "It's really important that you take care of yourself."
+    e "Even demons have to eat to survive."
+    e "Albeit, it's different from the way you humans eat."
+    e "But I know how important it is, including for you!"
+    e "Take care of yourself!"
+    menu:
+        e "Got it?"
+        "Got it.":
+            e "Ehehe!"
+    e "Good. I knew I could count on you."
     return
 
 label random_chatter_sacrifices:
