@@ -26,21 +26,21 @@ init python:
 define gui.accent_color = u'#cc0000'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = u'#888888'
+define gui.idle_color = u'#290000'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = u'#aaaaaa'
+define gui.idle_small_color = u'#000000'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = u'#e06666'
+define gui.hover_color = u'#cc0000'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = u'#ffffff'
+define gui.selected_color = u'#6A3535'
 
 ## The color used for a text button when it cannot be selected.
-define gui.insensitive_color = u'#8888887f'
+define gui.insensitive_color = u'#5B5B5B'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
@@ -55,7 +55,7 @@ define gui.interface_text_color = u'#000000'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "gui/fonts/Kalam-Regular.ttf"
 
 ## The font used for character names.
 define gui.name_text_font = "DejaVuSans.ttf"
