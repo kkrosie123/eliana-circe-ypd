@@ -1,6 +1,7 @@
 #keeps player from exiting to main menu
 #calls the needed affection loop
 label loops:
+    $ _window_hide() 
     $ renpy.save_persistent()
     if affection_eliana == "sinner":
         jump loop_idle_sinner
