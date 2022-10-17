@@ -302,7 +302,7 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
-            xalign -2.0
+            xalign -2.3
 
             textbutton("It's time to wake up.") action Start()
 
