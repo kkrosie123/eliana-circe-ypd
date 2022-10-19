@@ -7,7 +7,8 @@ init python:
         _("random_chatter_rare_entry"),
         _("random_chatter_sacrifices"),
         _("random_chatter_seasons"),
-        _("random_chatter_seven_sins")
+        _("random_chatter_seven_sins"),
+        _("random_chatter_axolotls")
     ]
     random_chatter = random.choice(random_chatter_list)
     rare_chatter_list = [
@@ -194,6 +195,27 @@ label random_chatter_seven_sins:
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "Not like I would mind~"
     return 
+
+label random_chatter_axolotls:
+    e "[player]!"
+    e "Have you ever heard of, or seen an axolotl?"
+    e "They are the cutest mortal things I've ever seen."
+    e "..."
+    e "After you, of course, my darling."
+    e "Hahaha!"
+    e "Anyway, axolotls are a type of salamander, but they don't go under metamorphosis..."
+    e "Which means they keep their gills and remain underwater for the rest of their fleeting lives."
+    e "Everyone usually recognize them for their external gills that go on top of their heads."
+    e "But I can't help but feel a little sad when I think they almost went through extinction..."
+    e "All because of the awful human behavior of destroying any nature they touch."
+    e "Ugh. Sometimes I can't even believe I fell for a human."
+    e "..."
+    if affection_eliana == "love" or affection_eliana == "enamored":
+        e "Aw, don't look so down, my dear [player]."
+        e "There is no human like you, and that's why I am head over heels for you, my mortal dork."
+    else:
+        e "I guess you're just worth my time~"
+    return
 
 #rare chatter
 label rare_chatter_dating_games:
