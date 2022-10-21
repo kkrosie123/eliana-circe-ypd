@@ -8,7 +8,8 @@ init python:
         _("random_chatter_sacrifices"),
         _("random_chatter_seasons"),
         _("random_chatter_seven_sins"),
-        _("random_chatter_axolotls")
+        _("random_chatter_axolotls"),
+        _("random_chatter_videogames")
     ]
     random_chatter = random.choice(random_chatter_list)
     rare_chatter_list = [
@@ -217,6 +218,16 @@ label random_chatter_axolotls:
         e "I guess you're just worth my time~"
     return
 
+label random_chatter_videogames:
+    "Hey [player], I noticed you seem to have quite the collection of video games!"
+    "Do you have any animal games?"
+    "You know, like Slime Simulators?"
+    "Hey! What's that look for?"
+    "Oh, you don't have slimes here on Earth…"
+    "Ahahaha, guess I have to learn a bit more about the animals here then!"
+    "Anyways, if you do have any animal games, I'd love to play them with you, my love~"
+    return
+    
 #rare chatter
 label rare_chatter_dating_games:
     show eliana neutral_00
