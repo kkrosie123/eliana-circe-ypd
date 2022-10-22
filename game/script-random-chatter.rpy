@@ -110,7 +110,7 @@ label random_chatter_have_you_eaten:
     menu:
         e "Got it?"
         "Got it.":
-            e "Ehehe!"
+            e "Mwehehe!"
     e "Good. I knew I could count on you."
     return
 
@@ -172,7 +172,7 @@ label random_chatter_seasons:
     e "Oh Satan. It's all so new."
     show eliana idle_01
     e "Perhaps I'll follow you the next time you go for a walk, so I can really take it all in."
-    e "Ehehe, don't worry. I'll keep out of sight of other mortals."
+    e "Mwehehe, don't worry. I'll keep out of sight of other mortals."
     return
 
 label random_chatter_seven_sins:
@@ -191,7 +191,7 @@ label random_chatter_seven_sins:
     e "And my my, you are OVERFLOWING with lust!"
     e "That's why I came here in the first place, you are SUCH a thirsty sinner!"
     show eliana idle_blink_04
-    e "Ehehe."
+    e "Mwehehe."
     e "I hope you're not committing the other sins I mentioned, [player]."
     if affection_eliana == "love" or affection_eliana == "enamored":
         e "Not like I would mind~"
@@ -203,7 +203,7 @@ label random_chatter_axolotls:
     e "They are the cutest mortal things I've ever seen."
     e "..."
     e "After you, of course, my darling."
-    e "Hahaha!"
+    e "Muahaha!"
     e "Anyway, axolotls are a type of salamander, but they don't go under metamorphosis..."
     e "Which means they keep their gills and remain underwater for the rest of their fleeting lives."
     e "Everyone usually recognize them for their external gills that go on top of their heads."
@@ -224,7 +224,7 @@ label random_chatter_videogames:
     "You know, like Slime Simulators?"
     "Hey! What's that look for?"
     "Oh, you don't have slimes here on Earth…"
-    "Ahahaha, guess I have to learn a bit more about the animals here then!"
+    "Muahaha, guess I have to learn a bit more about the animals here then!"
     "Anyways, if you do have any animal games, I'd love to play them with you, my love~"
     return
     
@@ -233,12 +233,12 @@ label rare_chatter_dating_games:
     show eliana neutral_00
     e "Why do people play dating games?"
     e "Shouldn't they just go out and, I don't know, get a real girlfriend?"
-    e "Ehehe."
+    e "Muehehe."
     return
 
 label rare_chatter_pixel_thirst:
     show eliana idle_blink_00
     e "You really are a sinner."
     e "Thirsting after me when I'm nothing but pixels."
-    e "...Ehehe."
+    e "...Muehehe."
     return

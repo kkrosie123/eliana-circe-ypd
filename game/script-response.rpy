@@ -59,7 +59,7 @@ label response_age:
         e "Er, I guess that's a bit ancient in human years."
         e "I'm sure you don't mind though."
     else:
-        e "Ehehe, isn't it rude to ask a girl her age?"
+        e "Mwehehe, isn't it rude to ask a girl her age?"
         show eliana high_aff_idle_blink_03
         e "Maybe I'll tell you sometime later. You'll just have to wait and see."
     return
@@ -70,7 +70,7 @@ label response_compliments_beautiful:
         e "Aww, thank you!"
         e "That's so sweet of you!"
         e "I think you're very beautiful, too."
-        e "Ehehe!"
+        e "Mwehehe!"
     else:
         show idle_03
         call quip_thanks_reluctant
@@ -80,7 +80,7 @@ label response_compliments_beautiful:
 label response_compliments_caring:
     if affection_eliana == "high" or affection_eliana == "love" or affection_eliana == "enamored":
         show eliana joyful_07
-        e "Ehehe, thanks!"
+        e "Mwehehe, thanks!"
         e "I'm glad you think so."
         e "You make me feel very loved and cared for~"
     else:
@@ -112,7 +112,7 @@ label response_emotes_bad:
 
 label response_emotes_good:
     show eliana high_aff_idle_02
-    e "Ehehe, what are you smiling for?"
+    e "Mwehehe, what are you smiling for?"
     return
 
 label response_flip_coin:
@@ -150,7 +150,7 @@ label response_hugs:
         show eliana neutral_00
         e "Oooh! Hugs? Sure!"
     elif affection_eliana == "high":
-        e "Yayy, hugs~ Ehehe~"
+        e "Yayy, hugs~ Mwehehe~"
     elif affection_eliana == "love":
         e "Aww! I love your hugs!"
     elif affection_eliana == "enamored":
