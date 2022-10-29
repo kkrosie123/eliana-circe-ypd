@@ -9,7 +9,15 @@ init python:
         _("random_chatter_seasons"),
         _("random_chatter_seven_sins"),
         _("random_chatter_axolotls"),
-        _("random_chatter_videogames")
+        _("random_chatter_videogames"),
+        _("random_chatter_lovecraft"),
+        _("random_chatter_hellweather"),
+        _("random_chatter_blackcats"),
+        _("random_chatter_pitties"),
+        _("random_chatter_iceskating"),
+        _("random_chatter_plushies"),
+        _("random_chatter_sweettooth"),
+        _("random_chatter_forteorigin")
     ]
     random_chatter = random.choice(random_chatter_list)
     rare_chatter_list = [
@@ -219,15 +227,135 @@ label random_chatter_axolotls:
     return
 
 label random_chatter_videogames:
-    "Hey [player], I noticed you seem to have quite the collection of video games!"
-    "Do you have any animal games?"
-    "You know, like Slime Simulators?"
-    "Hey! What's that look for?"
-    "Oh, you don't have slimes here on Earth…"
-    "Ahahaha, guess I have to learn a bit more about the animals here then!"
-    "Anyways, if you do have any animal games, I'd love to play them with you, my love~"
+    e "Hey [player], I noticed you seem to have quite the collection of video games!"
+    e "Do you have any animal games?"
+    e "You know, like Slime Simulators?"
+    e "Hey! What's that look for?"
+    e "Oh, you don't have slimes here on Earth…"
+    e "Ahahaha, guess I have to learn a bit more about the animals here then!"
+    e "Anyways, if you do have any animal games, I'd love to play them with you, my love~"
     return
     
+label random_chatter_lovecraft:
+    e "[player], have you heard of H.P. Lovecraft?"
+    e "He was an American horror fiction writer during the early 20th century."
+    e "You're probably at least somewhat familiar with his work, The Call Of Cthulhu."
+    e "Cosmic horror seemed to be his specialty."
+    e "Father says he wasn't all that entertaining to torment."
+    e "Maybe I can read something of his to you sometime..."
+    e "If you get scared of the horror bits, you can hold my hand~"
+    e "My little scaredy cat~"
+    return
+
+label random_chatter_hellweather:
+    e "Hey [player]... Do you like snow?"
+    menu:
+        "Yes":
+            e "Oh, lovely!"
+            jump random_chatter_hellweather2
+
+        "No":
+            e "Oh, well, I guess it's not for everyone."
+            jump random_chatter_hellweather2
+        return
+
+label random_chatter_hellweather2:
+    e "I adore the snow. We don't have weather in Hell..."
+    e "Well, not weather like on Earth, at least."
+    e "In Hell, we have hot, hotter, unbearably scorching, and lava rain."
+    e "Even lava is a bit too much for low level demons like me."
+    e "But here on Earth? It's so much different."
+    e "Next time it snows, can we go outside? I promise I won't be seen."
+    e "We can do snow angels together..."
+    e "Or snow demons, in that case...?"
+    e "Hahaha!"
+    return
+
+label random_chatter_blackcats:
+    e "People say that black cats are a bad omen, or a sign of bad luck."
+    e "But that way of thinking is really problematic."
+    e "Many black cats are abused because of stupid superstitions..."
+    e "Some shelters won't even take them because they believe they won't be adopted."
+    e "And even when they're taken in, a lot of the time they end up getting euthanized because nobody adopts them."
+    e "But they're no different from other cats!"
+    e "Cats are chaos beans, plain and simple. Regardless of the color of their fur."
+    e "I have a black cat back in Hell, her name is Forte."
+    e "She's the sweetest creature I've ever met."
+    e "If you behave well, you can replace that position someday, [player]~"
+    e "I wonder if you can show yourself to be the cutest creature ever? Ehehehe~"
+    e "Anyways, maybe I can introduce you two someday, [player]."
+    return 
+
+label random_chatter_pitties:
+    e "Quite a lot of people have this preconceived notion that pitbulls are these vicious monsters,"
+    e "But they're usually very sweet, actually."
+    e "They're like any other dog, they have their own unique temperaments, and need to be trained."
+    e "Pitties tend to mimic the people or animals they grow up around. If you're aggressive, they become aggressive."
+    e "Many cruel people, who I've had the deepest pleasure to torment, abuse, or even kill pitties, simply due to a stupid misconception."
+    e "Pitties are just dogs, and like any other dog, they just want you to love them."
+    e "Next time you see a pittie, and think 'better stay away,' remember how dogs learn behavior."
+    return
+
+#TODO: add a conditional related to seeing random_chatter_hellweather
+label random_chatter_iceskating:
+    e "[player], remember when I mentioned snow?"
+    e "Well I found out there's this thing called ice skating!"
+    e "We never had anything of the sort in hell!"
+    e "We should go try that sometime! I wonder if there are any rinks near you…"
+    e "Sounds like a date!"
+    return
+
+label random_chatter_plushies: 
+    e "[player], do you own any plushies?"
+    e "I find them very adorable!" 
+    e "I mean, they're soft and made into so many different creatures and animals!"
+    e "You probably already guessed but, in hell we don't really have soft things." 
+    e "Hm… I wonder if they would have a plushie of Forte?"
+    e "I would love to get one~"
+    return
+
+label random_chatter_sweettooth:
+    e "Hey [player] do you have a sweet tooth?" 
+    menu:
+        "Yes":
+            e "Oh me too!" 
+            jump random_chatter_sweettooth2
+        "No":
+            e "Oh, alright." 
+            jump random_chatter_sweettooth3
+
+label random_chatter_sweettooth2:
+    e "I love sweets!!! They are so delicious!" 
+    e "We never had anything like it in hell!" 
+    e "Just thinking about all the different sweet treats has got my mouth watering!"
+    e "Ooh! If you want I could teach you some recipes!" 
+    return
+
+label random_chatter_sweettooth3:
+    e "I love sweets!!! They are so delicious!" 
+    e "We never had anything like it in hell!" 
+    e "Just thinking about all the different sweet treats has got my mouth watering!"
+    e "Ooh! If you want I could teach you some recipes!" 
+    e "Maybe you could bring some!"
+    return
+
+label random_chatter_forteorigin:
+    e "Hey [player], I'm sure you're wondering about the cute little kitten that's been popping up lately!" 
+    e "Her name is Forte and she's my little hell kitten!"
+    e "Isn't she just the cutest little thing!" 
+    e "Mwehehe!" 
+    e "Anyway, would you like to hear how I met her?" 
+    e "Awesome!" 
+    e "So, Forte was actually a kitten from your world, mortal." 
+    e "But, she fell through one of our many portals to Hell!" 
+    e "That's how she became a hell cat or more specifically a hell kitten!"
+    e "Oh, My Satan [player]! It was so cute!" 
+    e "She fell right into my arms!" 
+    e "It's like we are destined to be together!" 
+    e "After all there's no better pair than a demon and their hell cat!" 
+    e "Mwehehe! Well, I hope you don't mind her coming and going as she pleases!"
+    return
+
 #rare chatter
 label rare_chatter_dating_games:
     show eliana neutral_00
